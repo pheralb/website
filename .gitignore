@@ -1,0 +1,18 @@
+# Dependencies =>
+node_modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Folders =>
+api
+.cache
+.env
+.vercel
+.output
+
+# Build folders =>
+/build/
+/public/build
+/api/index.js
+/api/index.js.map
