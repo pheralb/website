@@ -6,10 +6,16 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useOutlet
 } from "@remix-run/react";
 
 // Styles =>
 import styles from "./styles/tailwind.css";
+import prism from "./styles/prism.css";
+
+// Layout =>
+import Header from "@/layout/header";
+import Warning from "./layout/warning";
 
 // Metas =>
 export const meta: MetaFunction = () => ({
@@ -29,6 +35,7 @@ export const meta: MetaFunction = () => ({
 // Links =>
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: prism },
   {
     rel: "preload",
     as: "font",
@@ -56,6 +63,7 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
+  const outlet = useOutlet();
   return (
     <html lang="en">
       <head>
@@ -63,6 +71,8 @@ export default function App() {
         <Links />
       </head>
       <body className="text-white bg-night">
+        <Warning />
+        <Header />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
