@@ -1,34 +1,58 @@
-# Welcome to Remix!
+<div align="center">
 
-- [Remix Docs](https://remix.run/docs)
+<h3><strong>👋 My personal website</strong></h3>
 
-## Deployment
+<br></br>
 
-After having run the `create-remix` command and selected "Vercel" as a deployment target, you only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
+![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
+![GitHub license](https://img.shields.io/github/license/pheralb/web)
+[![Required Node.JS >=16.0.0](https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
 
-If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
+</div>
 
-```sh
-npm i -g vercel
-vercel
+## 📦 Packages
+
+- [**Remix**](https://remix.run/) - Focused on web standards and modern web app UX.
+- [**TypeScript**](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+- [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
+- [**React-Icons**](https://react-icons.github.io/react-icons/) - SVG React icons of popular icon packs.
+- [**React-Symbols**](https://react-symbols.vercel.app/) - Symbols by Miguel Solorio, for React.
+
+## 🚀 Contributing
+
+1. Clone the repository:
+
+```bash
+git@github.com:pheralb/web.git
 ```
 
-It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
+2. Install dependencies:
 
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
+```bash
 npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+ultra install
 ```
 
-Afterwards, start the Remix development server like so:
+3. Run the development server:
 
-```sh
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+ultra dev
 ```
 
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
+🪄 Open up [http://localhost:3000](http://localhost:3000), make your magic and create a pull request.
 
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
+## 📝 License
+
+- [MIT License](https://github.com/pheralb/web/blob/main/LICENSE).
