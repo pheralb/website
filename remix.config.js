@@ -12,6 +12,7 @@ module.exports = {
       rehypePlugins: [rehypePrismPlus],
     };
   },
+  serverDependenciesToBundle: ["@react-symbols/icons"],
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "api/index.js",
   // publicPath: "/build/",
