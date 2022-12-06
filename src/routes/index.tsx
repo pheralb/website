@@ -18,6 +18,7 @@ import { blogData } from "@/data/blog";
 import Section from "@/components/section";
 import Heading from "@/components/heading";
 import Project from "@/components/project";
+import Post from "@/components/post";
 
 export const loader: LoaderFunction = async () => {
   const res = await fetch(ghPinned);
@@ -45,20 +46,19 @@ export default function Index() {
       <Section title="📦 Projects">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {projectsData.map((project: ghPinnedInterface) => (
-            <Project {...project} />
+            <Project key={project.repo} {...project} />
           ))}
         </div>
       </Section>
       <Section title="📝 Blog">
         {blogData.map((blog) => (
-          <div className="w-full p-4 mb-1 space-y-3 transition-all duration-200 border rounded-lg bg-neutral-900/30 border-neutral-800">
-            <div className="flex items-center space-x-2">
-              <BiFile size={20} />
-              <Link to="/blog" className="text-xl">
-                {blog.title}
-              </Link>
-            </div>
-          </div>
+          <Post
+            key={blog.title}
+            title={blog.title}
+            url={blog.slug}
+            date={blog.date}
+            description={blog.description}
+          />
         ))}
       </Section>
     </>

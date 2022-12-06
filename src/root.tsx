@@ -81,7 +81,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="leading-6 text-white text-mini bg-night">
+      <body className="text-white bg-night">
         <Warning />
         <Header />
         <Outlet />

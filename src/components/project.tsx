@@ -4,11 +4,11 @@ import { BsGithub } from "react-icons/bs";
 
 const Project = (props: ghPinnedInterface) => {
   return (
-    <div className="w-full p-4 mb-1 space-y-3 transition-all duration-200 border rounded-lg bg-neutral-900/30 border-neutral-800">
-      <div className="flex items-center space-x-2">
+    <div className="w-full p-4 mb-1 transition-all duration-200 border rounded-lg bg-neutral-900/30 border-neutral-800">
+      <div className="flex items-center mb-2 space-x-2">
         <a
           href={props.link}
-          className="text-2xl font-medium"
+          className="text-xl font-medium text-gray-300 transition-all duration-150 hover:text-white"
           target="_blank"
           rel="noreferrer"
         >
@@ -17,7 +17,7 @@ const Project = (props: ghPinnedInterface) => {
         <BiLinkExternal size={13} className="text-gray-400" />
       </div>
       <p className="text-gray-400 truncate">{props.description}</p>
-      <div className="flex items-center justify-between space-x-4">
+      <div className="flex items-center justify-between mt-3 space-x-4">
         <div className="flex items-center space-x-3">
           <div className="flex items-center space-x-2">
             <BiStar size={15} />
