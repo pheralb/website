@@ -16,3 +16,6 @@ api
 /public/build
 /api/index.js
 /api/index.js.map
+
+# Tailwind CSS Compiled File =>
+**/src/styles/tailwind.css
