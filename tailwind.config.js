@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Satoshi", "sans-serif"],
+        sans: ["GeneralSans-Variable", "sans-serif"],
         mono: ["Cascadia", "monospace"],
+      },
+      fontSize: {
+        "mini": "15px",
       },
       colors: {
         night: "#121212",
