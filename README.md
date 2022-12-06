@@ -1,7 +1,5 @@
 <div align="center">
 
-<h2>🚀 <strong>My personal website</strong></h2>
-
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
 ![GitHub license](https://img.shields.io/github/license/pheralb/web)
 [![Required Node.JS >=16.0.0](https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
@@ -10,7 +8,9 @@
 
 > **🚧 This website is under construction.**
 
-## 📦 Packages
+## 👋 Welcome
+
+Welcome to my website. Built with:
 
 - [**Remix**](https://remix.run/) - Focused on web standards and modern web app UX.
 - [**TypeScript**](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
