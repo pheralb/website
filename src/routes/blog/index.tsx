@@ -1,7 +1,7 @@
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
-import * as hello from "hello.mdx";
+import * as hello from "supabase-auth-remix.mdx";
 
 interface modInterface {
   filename: string;

@@ -6,12 +6,15 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useOutlet
+  useTransition,
 } from "@remix-run/react";
+import { useEffect } from "react";
+import NProgress from "nprogress";
 
 // Styles =>
 import styles from "./styles/tailwind.css";
 import prism from "./styles/prism.css";
+import nProgressStyles from "./styles/nprogress.css";
 
 // Layout =>
 import Header from "@/layout/header";
@@ -36,10 +39,11 @@ export const meta: MetaFunction = () => ({
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
   { rel: "stylesheet", href: prism },
+  { rel: "stylesheet", href: nProgressStyles },
   {
     rel: "preload",
     as: "font",
-    href: "/fonts/Satoshi-Variable.woff2",
+    href: "/fonts/GeneralSans-Variable.woff2",
     type: "font/woff2",
     crossOrigin: "anonymous",
   },
@@ -63,14 +67,21 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
-  const outlet = useOutlet();
+  const transition = useTransition();
+
+  useEffect(() => {
+    if (transition.state === "idle") NProgress.done();
+    else NProgress.start();
+    NProgress.configure({ speed: 500, showSpinner: false });
+  }, [transition.state]);
+
   return (
     <html lang="en">
       <head>
         <Meta />
         <Links />
       </head>
-      <body className="text-white bg-night">
+      <body className="leading-6 text-white text-mini bg-night">
         <Warning />
         <Header />
         <Outlet />
