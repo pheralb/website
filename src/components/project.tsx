@@ -7,7 +7,7 @@ const Project = (props: ghPinnedInterface) => {
     <div className="w-full p-4 mb-1 transition-all duration-200 border rounded-lg bg-neutral-900/30 border-neutral-800">
       <div className="flex items-center mb-2 space-x-2">
         <a
-          href={props.link}
+          href={props.website}
           className="text-xl font-medium text-gray-300 transition-all duration-150 hover:text-white"
           target="_blank"
           rel="noreferrer"
@@ -28,7 +28,7 @@ const Project = (props: ghPinnedInterface) => {
             <span>{props.forks}</span>
           </div>
         </div>
-        <a href={props.link} target="_blank" rel="noreferrer">
+        <a href={props.repo} target="_blank" rel="noreferrer">
           <BsGithub
             size={18}
             className="text-gray-400 transition-all duration-200 hover:text-white"

@@ -1,19 +1,10 @@
-import {
-  Reactjs,
-  Svelte,
-  TypeScript,
-  Js,
-  Next,
-  Prisma,
-  Firebase,
-} from "@react-symbols/icons";
 import { json } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react";
-import { ghPinned, ghPinnedInterface } from "@/data/projects";
+import { useLoaderData } from "@remix-run/react";
 
-import { BiFile } from "react-icons/bi";
+import { ghPinned, ghPinnedInterface } from "@/data/projects";
 import { blogData } from "@/data/blog";
+import { technologiesData } from "@/data/technologies";
 
 import Section from "@/components/section";
 import Heading from "@/components/heading";
@@ -33,20 +24,24 @@ export default function Index() {
         <p className="text-xl text-gray-300">
           I'm a frontend developer from Canary Islands.
         </p>
-        <div className="flex items-center mt-6 space-x-4">
-          <Reactjs className="w-6 h-6" />
-          <Next className="w-6 h-6" />
-          <Svelte className="w-6 h-6" />
-          <TypeScript className="w-6 h-6" />
-          <Js className="w-6 h-6" />
-          <Prisma className="w-6 h-6" />
-          <Firebase className="w-6 h-6" />
-        </div>
       </Heading>
       <Section title="📦 Projects">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {projectsData.map((project: ghPinnedInterface) => (
             <Project key={project.repo} {...project} />
+          ))}
+        </div>
+      </Section>
+      <Section title="🛠️ Technologies">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-4">
+          {technologiesData.map((tech) => (
+            <div
+              key={tech.name}
+              className="flex items-center justify-center px-4 py-2 space-x-2 text-gray-300 border rounded-md bg-neutral-900/30 border-neutral-800 text-medium"
+            >
+              {tech.icon}
+              <span>{tech.name}</span>
+            </div>
           ))}
         </div>
       </Section>
