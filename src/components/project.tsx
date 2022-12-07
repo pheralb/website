@@ -28,7 +28,7 @@ const Project = (props: ghPinnedInterface) => {
             <span>{props.forks}</span>
           </div>
         </div>
-        <a href={props.repo} target="_blank" rel="noreferrer">
+        <a href={props.link} target="_blank" rel="noreferrer">
           <BsGithub
             size={18}
             className="text-gray-400 transition-all duration-200 hover:text-white"

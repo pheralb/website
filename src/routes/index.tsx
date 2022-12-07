@@ -22,7 +22,7 @@ export default function Index() {
     <>
       <Heading title="Hi, I'm Pablo ✌️">
         <p className="text-xl text-gray-300">
-          I'm a frontend developer from Canary Islands.
+          I'm a frontend web developer from Canary Islands.
         </p>
       </Heading>
       <Section title="📦 Projects">

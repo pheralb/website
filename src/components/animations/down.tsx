@@ -8,7 +8,7 @@ type DownProps = {
 
 const Down: FC<DownProps> = ({ children, delay }) => (
   <motion.div
-    initial={{ y: -12, opacity: 0 }}
+    initial={{ y: -6, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{
       duration: 0.5,

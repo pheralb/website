@@ -82,7 +82,7 @@ export default function App() {
         <Links />
       </head>
       <body className="text-white bg-night">
-        <Warning />
+        {/* <Warning /> */}
         <Header />
         <Outlet />
         <ScrollRestoration />
