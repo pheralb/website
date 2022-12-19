@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 
-// Global styles =>
+// Theme & global styles =>
+import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 
 // Fonts =>
@@ -16,8 +17,10 @@ const jetBrainsMono = JetBrains_Mono({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${inter.variable} ${jetBrainsMono.variable} font-sans`}>
-      <Component {...pageProps} />
-    </div>
+    <ThemeProvider attribute="class">
+      <div className={`${inter.variable} ${jetBrainsMono.variable} font-sans`}>
+        <Component {...pageProps} />
+      </div>
+    </ThemeProvider>
   );
 }
