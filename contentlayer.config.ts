@@ -1,5 +1,7 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import highlight from "rehype-prism-plus";
+
+// MDX Plugins =>
+import rehypePrism from "rehype-prism-plus";
 import remarkGfm from "remark-gfm";
 
 const Post = defineDocumentType(() => ({
@@ -17,6 +19,16 @@ const Post = defineDocumentType(() => ({
       description: "The description of the post",
       required: true,
     },
+    date: {
+      type: "date",
+      description: "The date of the post",
+      required: true,
+    },
+    image: {
+      type: "string",
+      description: "The image of the post",
+      required: true,
+    },
   },
   computedFields: {
     url: {
@@ -29,5 +41,8 @@ const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "posts",
   documentTypes: [Post],
-  mdx: { rehypePlugins: [highlight], remarkPlugins: [remarkGfm] },
+  mdx: {
+    rehypePlugins: [rehypePrism],
+    remarkPlugins: [remarkGfm],
+  },
 });
