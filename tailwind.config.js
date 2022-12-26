@@ -7,8 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
-        mono: ["var(--font-jetbrains-mono)", ...fontFamily.mono],
+        sans: ['var(--font-inter)', ...fontFamily.sans],
+        mono: ["Cascadia", "monospace"],
+      },
+      fontSize: {
+        "mini": "14px",
       },
       colors: {
         light: "#FFFEFC",
