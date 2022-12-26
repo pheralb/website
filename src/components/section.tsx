@@ -7,10 +7,8 @@ interface SectionProps {
 
 const Section = (props: SectionProps) => {
   return (
-    <div className="w-full max-w-6xl mx-auto my-10">
-      <div className="flex items-center mb-3 space-x-4">
-        <h1 className="mb-2 text-2xl font-medium">{props.title}</h1>
-      </div>
+    <div className="mb-4 pt-7">
+      <h1 className="mb-3 text-2xl text-gray-300">{props.title}</h1>
       {props.children}
     </div>
   );

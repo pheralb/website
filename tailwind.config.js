@@ -1,14 +1,21 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["GeneralSans-Variable", "sans-serif"],
+        sans: ['var(--font-inter)', ...fontFamily.sans],
         mono: ["Cascadia", "monospace"],
       },
+      fontSize: {
+        "mini": "14px",
+      },
       colors: {
-        night: "#121212",
+        light: "#FFFEFC",
+        midnight: "#121212",
       },
     },
   },

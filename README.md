@@ -6,14 +6,12 @@
 
 </div>
 
-> **🚧 This website is under construction.**
-
 ## 👋 Welcome
 
 Welcome to my website. Built with:
 
-- [**Remix**](https://remix.run/) - Focused on web standards and modern web app UX.
-- [**TypeScript**](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+- [**Next.js + Typescript**](https://nextjs.org/) - The React Framework
+for Production.
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
 - [**React-Icons**](https://react-icons.github.io/react-icons/) - SVG React icons of popular icon packs.
