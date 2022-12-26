@@ -5,22 +5,22 @@ import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 
 // Fonts =>
-import { Inter, JetBrains_Mono } from "@next/font/google";
+import { Inter } from "@next/font/google";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-});
+
+// Layout =>
+import Header from "@/layout/header";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <div className={`${inter.variable} ${jetBrainsMono.variable} font-sans`}>
+      <main className={`${inter.variable} font-sans`}>
+        <Header />
         <Component {...pageProps} />
-      </div>
+      </main>
     </ThemeProvider>
   );
 }
