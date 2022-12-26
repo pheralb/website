@@ -15,7 +15,7 @@ export default function Home({ posts }: { posts: DocContent[] }) {
           <div>
             <h1 className="mb-4 text-5xl font-bold">Hi, I&apos;m Pablo ✌️</h1>
             <p className="text-xl text-gray-300">
-              I'm a frontend developer from Canary Islands.
+              I&apos;m a frontend developer from Canary Islands.
             </p>
           </div>
         </div>
