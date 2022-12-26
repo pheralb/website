@@ -13,11 +13,13 @@ const inter = Inter({
 
 // Layout =>
 import Header from "@/layout/header";
+import Warning from "@/components/warning";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <main className={`${inter.variable} font-sans`}>
+        <Warning />
         <Header />
         <Component {...pageProps} />
       </main>
