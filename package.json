@@ -10,12 +10,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.0.7",
+    "@next/font": "13.1.1",
+    "@react-symbols/icons": "1.1.4",
+    "classnames": "2.3.2",
     "contentlayer": "0.2.9",
+    "date-fns": "2.29.3",
     "next": "13.0.7",
     "next-contentlayer": "0.2.9",
+    "next-themes": "0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "4.7.1",
     "rehype-prism-plus": "1.5.0",
     "remark-gfm": "3.0.1"
   },
