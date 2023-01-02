@@ -12,7 +12,7 @@ const Project = (props: iProjects) => {
         {props.url ? (
           <ExternalLink href={props.url}>
             <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-medium">{props.title}</h1>
+              <h1 className="text-xl font-medium hover:text-gray-100 dark:hover:text-gray-300">{props.title}</h1>
               <BiLinkExternal size={13} />
             </div>
           </ExternalLink>
