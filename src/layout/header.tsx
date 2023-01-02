@@ -32,14 +32,14 @@ const Header = () => {
               <CustomLink
                 key={link.url}
                 href={link.url}
-                className={`text-gray-400 transition-all duration-150 hover:text-gray-100
-                ${router.pathname === link.url && "text-gray-100"}`}
+                className={`dark:text-gray-400 transition-all duration-150 hover:text-gray-400 dark:hover:text-gray-100
+                ${router.pathname === link.url && "dark:text-gray-100 text-gray-400"}`}
               >
                 {link.url}
               </CustomLink>
             ))}
             <div className="flex items-center justify-center pl-6 space-x-5 border-l border-neutral-700">
-              <BsCommand size={19} className="text-gray-300" />
+              <BsCommand size={19} className="dark:text-gray-300" />
               {socialsLinks.map((link: iSocials) => (
                 <ExternalLink key={link.url} href={link.url}>
                   {link.icon}

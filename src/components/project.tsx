@@ -7,7 +7,7 @@ import { NPM, Puzzle } from "@react-symbols/icons";
 
 const Project = (props: iProjects) => {
   return (
-    <div className="flex flex-col p-4 border rounded-md border-neutral-800">
+    <div className="flex flex-col p-4 border rounded-md dark:border-neutral-800">
       <div className="flex items-center justify-between mb-2">
         {props.url ? (
           <ExternalLink href={props.url}>
@@ -22,11 +22,11 @@ const Project = (props: iProjects) => {
         <ExternalLink href={props.gh}>
           <BsGithub
             size={20}
-            className="text-gray-400 transition-colors duration-150 hover:text-gray-100"
+            className="text-gray-400 transition-colors duration-150 hover:text-gray-900 dark:hover:text-gray-100"
           />
         </ExternalLink>
       </div>
-      <p className="text-gray-300">{props.description}</p>
+      <p className="dark:text-gray-300">{props.description}</p>
       <div className="flex items-center mt-3 space-x-2">
         {props.type === "Library" ? <NPM width={20} /> : <Puzzle width={20} />}
         {props.tags.map((tag) => (
