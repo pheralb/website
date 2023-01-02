@@ -4,25 +4,19 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 
-// Fonts =>
-import { Inter } from "@next/font/google";
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 // Layout =>
 import Header from "@/layout/header";
+import Routing from "@/motions/routing";
 import Warning from "@/components/warning";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <main className={`${inter.variable} font-sans`}>
-        <Warning />
-        <Header />
+      <Warning />
+      <Header />
+      <Routing key={router.route}>
         <Component {...pageProps} />
-      </main>
+      </Routing>
     </ThemeProvider>
   );
 }
