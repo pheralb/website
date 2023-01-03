@@ -1,4 +1,5 @@
-const { withContentlayer } = require("next-contentlayer");
+// @ts-check
+import { withContentlayer } from 'next-contentlayer';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -6,4 +7,4 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withContentlayer(nextConfig);
+export default withContentlayer(nextConfig);
