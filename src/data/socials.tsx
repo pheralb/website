@@ -14,7 +14,7 @@ export const socialsLinks = [
     icon: (
       <BsGithub
         size={19}
-        className="text-gray-300 transition-all duration-200 hover:text-stone-400"
+        className="transition-all duration-200 dark:text-gray-300 hover:text-stone-400"
       />
     ),
   },
@@ -23,7 +23,7 @@ export const socialsLinks = [
     icon: (
       <BsTwitter
         size={19}
-        className="text-gray-300 transition-all duration-200 hover:text-blue-400"
+        className="transition-all duration-200 dark:text-gray-300 hover:text-blue-400"
       />
     ),
   },
@@ -32,7 +32,7 @@ export const socialsLinks = [
     icon: (
       <BsTwitch
         size={19}
-        className="text-gray-300 transition-all duration-200 hover:text-indigo-400"
+        className="transition-all duration-200 dark:text-gray-300 hover:text-indigo-400"
       />
     ),
   },
@@ -41,7 +41,7 @@ export const socialsLinks = [
     icon: (
       <BsLinkedin
         size={19}
-        className="text-gray-300 transition-all duration-200 hover:text-blue-600"
+        className="transition-all duration-200 dark:text-gray-300 hover:text-blue-600"
       />
     ),
   },

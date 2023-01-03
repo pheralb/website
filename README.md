@@ -8,14 +8,16 @@
 
 ## 👋 Welcome
 
-Welcome to my website. Built with:
+My personal website written in:
 
 - [**Next.js + Typescript**](https://nextjs.org/) - The React Framework
 for Production.
+- [**Contentlayer + MDX**](https://www.contentlayer.dev/) - Content made easy for developers.
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**Framer Motion**](https://www.framer.com/motion/) - Production-Ready Animation Library for React.
 - [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
-- [**React-Icons**](https://react-icons.github.io/react-icons/) - SVG React icons of popular icon packs.
-- [**React-Symbols**](https://react-symbols.vercel.app/) - Symbols by Miguel Solorio, for React.
+- [**React-Icons**](https://react-icons.github.io/react-icons/) with [**React-Symbols**](https://react-symbols.vercel.app/) - SVG React icons.
+- [**Superkey**](https://superkey.vercel.app/) - A stylized command menu for React.
 
 ## 🚀 Contributing
 
@@ -49,7 +51,7 @@ pnpm dev
 ultra dev
 ```
 
-🪄 Open up [http://localhost:3000](http://localhost:3000), make your magic and create a pull request.
+Open up [http://localhost:3000](http://localhost:3000), make your magic and create a pull request.
 
 ## 📝 License
 

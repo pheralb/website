@@ -5,7 +5,7 @@ const ChangeTheme = () => {
   const { theme, setTheme } = useTheme();
   return (
     <button
-      className="text-gray-300 transition-all duration-200 hover:text-gray-400"
+      className="transition-all duration-200 dark:text-gray-300 hover:text-gray-400"
       onClick={() => {
         setTheme(theme === "light" ? "dark" : "light");
       }}
