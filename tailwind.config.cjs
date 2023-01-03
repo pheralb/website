@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Satoshi', ...fontFamily.sans],
-        mono: ["Cascadia", "monospace"],
+        mono: ['Cascadia', ...fontFamily.mono],
       },
       colors: {
         light: "#FFFEFC",
