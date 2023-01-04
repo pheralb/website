@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-import { BsCommand, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { headerLinks, iHeaderLinks } from "@/data/headerLinks";
+import { headerLinks } from "@/data/headerLinks";
 import ChangeTheme from "@/components/changeTheme";
 
 import CustomContainer from "@/ui/container";
 import { CustomLink, ExternalLink } from "@/ui/link";
-import { useRouter } from "next/router";
-import { iSocials, socialsLinks } from "@/data/socials";
+
+import { socialsLinks } from "@/data/socials";
 
 const Header = () => {
   const router = useRouter();
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
           </Link>
           <div className="flex items-center justify-center space-x-7">
-            {headerLinks.map((link: iHeaderLinks) => (
+            {headerLinks.map((link) => (
               <CustomLink
                 key={link.url}
                 href={link.url}
@@ -39,8 +39,7 @@ const Header = () => {
               </CustomLink>
             ))}
             <div className="flex items-center justify-center pl-6 space-x-5 border-l border-neutral-700">
-              <BsCommand size={19} className="dark:text-gray-300" />
-              {socialsLinks.map((link: iSocials) => (
+              {socialsLinks.map((link) => (
                 <ExternalLink key={link.url} href={link.url} className="hover:-translate-y-0.5 duration-150 transition-all">
                   {link.icon}
                 </ExternalLink>
