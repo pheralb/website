@@ -11,6 +11,9 @@ const nextConfig = {
       "www.fontshare.com",
       "phosphoricons.com",
       "heroicons.com",
+      "ui.land",
+      "rauno.me",
+      "midu.dev",
     ],
   },
 };
