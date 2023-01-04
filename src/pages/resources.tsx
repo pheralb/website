@@ -26,7 +26,9 @@ const Stack = () => {
           allCategories.map((category) => (
             <Tag
               className={
-                category === selectedCategory ? "border-neutral-600 dark:border-neutral-500 duration-150" : ""
+                category === selectedCategory
+                  ? "border-neutral-600 dark:border-neutral-500 duration-150"
+                  : ""
               }
               key={category}
               onClick={() => setSelectedCategory(category)}
@@ -37,24 +39,25 @@ const Stack = () => {
       </div>
       <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
         {selectedCategory === "all"
-          ? resources.map((font) => (
-              <CardUrl
-                key={font.name}
-                title={font.name}
-                url={font.url}
-                description={font.description}
-                image={font.img}
-              />
-            ))
-          : resources
-              .filter((font) => font.category === selectedCategory)
-              .map((font) => (
+          ? resources
+              .map((resource) => (
                 <CardUrl
-                  key={font.name}
-                  title={font.name}
-                  url={font.url}
-                  description={font.description}
-                  image={font.img}
+                  key={resource.title}
+                  title={resource.title}
+                  url={resource.url}
+                  description={resource.description}
+                  image={resource.img}
+                />
+              ))
+          : resources
+              .filter((resource) => resource.category === selectedCategory)
+              .map((resource) => (
+                <CardUrl
+                  key={resource.title}
+                  title={resource.title}
+                  url={resource.url}
+                  description={resource.description}
+                  image={resource.img}
                 />
               ))}
       </div>

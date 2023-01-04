@@ -34,7 +34,7 @@ const DocLayout = ({ doc }: { doc: DocContent }) => {
           </ExternalLink>
         </div>
       </CustomContainer>
-      <div className="max-w-4xl mx-auto py-14">
+      <div className="max-w-4xl px-4 py-5 mx-auto md:py-14 md:px-0">
         <div className="pb-4 border-b border-neutral-800">
           <h1 className="mb-2 text-4xl font-bold">{doc.title}</h1>
           <p className="text-xl text-gray-400">{doc.description}</p>
