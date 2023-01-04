@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "1.7.7",
     "@next/font": "13.1.1",
     "@react-symbols/icons": "1.1.4",
     "@vercel/analytics": "0.1.6",
