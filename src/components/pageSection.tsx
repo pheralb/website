@@ -6,7 +6,7 @@ interface PageSectionProps {
 
 const PageSection = (props: PageSectionProps) => {
   return (
-    <div className="flex flex-col py-8">
+    <div className="flex flex-col py-3 md:py-8">
       <h2 className="text-4xl font-medium">
         {props.title ? props.title : "Page Section"}
       </h2>

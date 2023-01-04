@@ -36,7 +36,7 @@ export const Cardlg = (props: CardProps) => {
 export const CardUrl = (props: CardProps) => {
   return (
     <ExternalLink href={props.url}>
-      <div className="transition-all duration-150 bg-white border border-gray-200 rounded-lg hover:shadow-sm dark:bg-neutral-900 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+      <div className="transition-all duration-150 border border-gray-200 rounded-lg hover:shadow-sm dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-900">
         <div className="p-5">
           <div className="flex items-center mb-3 space-x-3">
             <Image

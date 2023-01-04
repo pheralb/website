@@ -8,7 +8,7 @@
 
 ## 👋 Welcome
 
-My personal website written in:
+**Personal website** built with:
 
 - [**Next.js + Typescript**](https://nextjs.org/) - The React Framework
 for Production.
@@ -17,7 +17,11 @@ for Production.
 - [**Framer Motion**](https://www.framer.com/motion/) - Production-Ready Animation Library for React.
 - [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
 - [**React-Icons**](https://react-icons.github.io/react-icons/) with [**React-Symbols**](https://react-symbols.vercel.app/) - SVG React icons.
-- [**Superkey**](https://superkey.vercel.app/) - A stylized command menu for React.
+
+**Resources API** built with:
+
+- [**Hono + Typescript**](https://hono.dev/) - A small, simple, and ultrafast web framework for Cloudflare Workers.
+- [**Cloudflare Workers**](https://workers.cloudflare.com/) - A platform for enabling serverless functions to run as close as possible to the end user.
 
 ## 🚀 Contributing
 
@@ -49,6 +53,15 @@ yarn dev
 pnpm dev
 # or
 ultra dev
+```
+
+📁 Folder structure:
+
+```
+[] posts - MDX files.
+[] public - Static files.
+[] resources - Resources API with Cloudflare Workers.
+[] src - Source code.
 ```
 
 Open up [http://localhost:3000](http://localhost:3000), make your magic and create a pull request.

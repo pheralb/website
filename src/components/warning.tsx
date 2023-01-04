@@ -5,7 +5,7 @@ type Props = {};
 
 const Warning = (props: Props) => {
   return (
-    <div className="p-2 text-white bg-indigo-900/30">
+    <div className="p-2 border-b dark:text-white border-neutral-200 dark:border-neutral-800">
       <CustomContainer>
         <p>🚧 Website under construction.</p>
       </CustomContainer>

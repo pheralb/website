@@ -3,11 +3,6 @@ import { ReactNode } from "react";
 // Icons =>
 import { BsGithub, BsLinkedin, BsTwitch, BsTwitter } from "react-icons/bs";
 
-export interface iSocials {
-  url: string;
-  icon: ReactNode;
-}
-
 export const socialsLinks = [
   {
     url: "https://github.com/pheralb",

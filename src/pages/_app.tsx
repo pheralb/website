@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 // Theme & global styles =>
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
+//
 
 // Other =>
 import Header from "@/layout/header";
