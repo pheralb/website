@@ -10,6 +10,6 @@ export const headerLinks = [
     url: "/projects",
   },
   {
-    url: "/stack",
+    url: "/resources",
   },
 ];
