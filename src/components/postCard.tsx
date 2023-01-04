@@ -12,7 +12,7 @@ interface PostCardProps {
 const PostCard = (props: PostCardProps) => {
   return (
     <CustomLink href={props.url}>
-      <div className="p-3 transition-all duration-150 rounded-md hover:bg-gray-100 dark:hover:bg-neutral-800 bg-neutral-300/40 dark:bg-neutral-900">
+      <div className="p-3 transition-all duration-150 border rounded-md dark:border-neutral-800 dark:hover:bg-neutral-900 hover:bg-neutral-100">
         <div className="flex items-center space-x-3">
           <img
             src={props.image}

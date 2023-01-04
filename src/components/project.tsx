@@ -30,7 +30,7 @@ const Project = (props: iProjects) => {
       <div className="flex items-center mt-3 space-x-2">
         {props.type === "Library" ? <NPM width={20} /> : <Puzzle width={20} />}
         {props.tags.map((tag) => (
-          <Tag key={tag}>{tag}</Tag>
+          <Tag className="text-xs" key={tag}>{tag}</Tag>
         ))}
       </div>
     </div>

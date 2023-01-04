@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { allDocContents, DocContent } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 
 import CustomContainer from "@/ui/container";
 import Input from "@/ui/input";
+
 import PostCard from "@/components/postCard";
-import { useState } from "react";
+import PageSection from "@/components/pageSection";
 
 const Blog = ({ posts }: { posts: DocContent[] }) => {
   const [search, setSearch] = useState("");
@@ -19,9 +21,7 @@ const Blog = ({ posts }: { posts: DocContent[] }) => {
 
   return (
     <CustomContainer>
-      <div className="flex flex-col py-8">
-        <h2 className="text-4xl font-medium">Blog</h2>
-      </div>
+      <PageSection title="Blog" />
       <Input
         placeholder="Search posts..."
         className="mb-4"
