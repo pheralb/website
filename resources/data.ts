@@ -1,6 +1,38 @@
 export const resources = [
   {
-    title: "family",
+    title: "react.email",
+    category: "tools",
+    description:
+      "A collection of high-quality, unstyled components for creating beautiful emails using React and TypeScript.",
+    url: "https://react.email/",
+    img: "/logos/reactemail.ico",
+  },
+  {
+    title: "Raster",
+    category: "tools",
+    description:
+      "Photo manager for modern teams.",
+    url: "https://raster.app/",
+    img: "/logos/raster.png",
+  },
+  {
+    title: "Hypercolor",
+    category: "tools",
+    description:
+      "A curated collection of beautiful Tailwind CSS gradients",
+    url: "https://hypercolor.dev/",
+    img: "/logos/hypercolor.png",
+  },
+  {
+    title: "Tamagui",
+    category: "tools",
+    description:
+      "Styles, optimizing compiler & UI kit that unify React Native + Web",
+    url: "https://tamagui.dev/",
+    img: "/logos/tamagui.svg",
+  },
+  {
+    title: "Family",
     category: "crypto",
     description:
       "The self-custody crypto wallet you’ll love.",
@@ -8,7 +40,7 @@ export const resources = [
     img: "/logos/family.png",
   },
   {
-    title: "linear",
+    title: "Linear",
     category: "tools",
     description:
       "Meet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.",
@@ -16,7 +48,7 @@ export const resources = [
     img: "/logos/linear.ico",
   },
   {
-    title: "httpie",
+    title: "HTTPie",
     category: "tools",
     description:
       "HTTPie is making APIs simple and intuitive for those building the tools of our time.",
