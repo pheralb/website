@@ -1,20 +1,12 @@
 // @ts-check
-import { withContentlayer } from "next-contentlayer";
+const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: [
-      "rsms.me",
-      "www.fontshare.com",
-      "phosphoricons.com",
-      "heroicons.com",
-      "ui.land",
-      "rauno.me",
-      "midu.dev",
-    ],
+    domains: ["reapi.pheralb.workers.dev"],
   },
   async redirects() {
     return [
@@ -42,4 +34,4 @@ const nextConfig = {
   },
 };
 
-export default withContentlayer(nextConfig);
+module.exports = withContentlayer(nextConfig);
