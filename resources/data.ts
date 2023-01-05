@@ -1,5 +1,29 @@
 export const resources = [
   {
+    title: "family",
+    category: "crypto",
+    description:
+      "The self-custody crypto wallet you’ll love.",
+    url: "https://family.co/",
+    img: "/logos/family.png",
+  },
+  {
+    title: "linear",
+    category: "tools",
+    description:
+      "Meet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.",
+    url: "https://linear.app/",
+    img: "/logos/linear.ico",
+  },
+  {
+    title: "httpie",
+    category: "tools",
+    description:
+      "HTTPie is making APIs simple and intuitive for those building the tools of our time.",
+    url: "https://httpie.io/",
+    img: "/logos/httpie.png",
+  },
+  {
     title: "midudev",
     category: "people",
     description:
