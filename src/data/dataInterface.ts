@@ -1,5 +1,6 @@
 export interface iData {
   title: string;
+  category?: string;
   description?: string;
   url?: string;
   gh?: string;
@@ -7,4 +8,12 @@ export interface iData {
   type?: string;
   tags?: string[];
   icon?: React.ReactNode;
+}
+
+export interface iResources {
+  title: string;
+  category: string;
+  description: string;
+  url: string;
+  img: string;
 }

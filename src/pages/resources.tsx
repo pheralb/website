@@ -1,5 +1,8 @@
+import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
+
 import { useEffect, useState } from "react";
-import { resources } from "@/data/resources";
+import { resourcesApi } from "@/data/resources";
+import type { iResources } from "@/data/dataInterface";
 
 import PageSection from "@/components/pageSection";
 
@@ -7,16 +10,20 @@ import { CardUrl } from "@/ui/card";
 import CustomContainer from "@/ui/container";
 import Tag from "@/ui/tag";
 
-const Stack = () => {
+const Resources = ({
+  data,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [allCategories, setAllCategories] = useState<string[]>([]);
 
   useEffect(() => {
-    const categories = resources
-      .map((resource) => resource.category)
-      .filter((category, index, array) => array.indexOf(category) === index);
+    const categories = data
+      .map((resource: iResources) => resource.category)
+      .filter((category: string, index: number, self: string[]) => {
+        return self.indexOf(category) === index;
+      });
     setAllCategories(["all", ...categories]);
-  }, [resources]);
+  }, [data]);
 
   return (
     <CustomContainer>
@@ -39,25 +46,26 @@ const Stack = () => {
       </div>
       <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
         {selectedCategory === "all"
-          ? resources
-              .map((resource) => (
+          ? data.map((resource: iResources) => (
+              <CardUrl
+                key={resource.title}
+                title={resource.title}
+                url={resource.url}
+                description={resource.description}
+                image={`${resourcesApi}${resource.img}`}
+              />
+            ))
+          : data
+              .filter(
+                (resource: iResources) => resource.category === selectedCategory
+              )
+              .map((resource: iResources) => (
                 <CardUrl
                   key={resource.title}
                   title={resource.title}
                   url={resource.url}
                   description={resource.description}
-                  image={resource.img}
-                />
-              ))
-          : resources
-              .filter((resource) => resource.category === selectedCategory)
-              .map((resource) => (
-                <CardUrl
-                  key={resource.title}
-                  title={resource.title}
-                  url={resource.url}
-                  description={resource.description}
-                  image={resource.img}
+                  image={`${resourcesApi}${resource.img}`}
                 />
               ))}
       </div>
@@ -65,4 +73,10 @@ const Stack = () => {
   );
 };
 
-export default Stack;
+export const getServerSideProps: GetServerSideProps = async () => {
+  const res = await fetch(resourcesApi);
+  const data: iResources[] = await res.json();
+  return { props: { data } };
+};
+
+export default Resources;
