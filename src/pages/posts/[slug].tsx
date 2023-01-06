@@ -7,6 +7,7 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import { BiArrowBack, BiEditAlt } from "react-icons/bi";
 import CustomContainer from "@/ui/container";
 import { CustomLink, ExternalLink } from "@/ui/link";
+import Button from "@/ui/button";
 
 const DocLayout = ({ doc }: { doc: DocContent }) => {
   const MDXContent = useMDXComponent(doc.body.code);
@@ -23,15 +24,18 @@ const DocLayout = ({ doc }: { doc: DocContent }) => {
               <span>Blog</span>
             </div>
           </CustomLink>
-          <ExternalLink
-            href={`https://github.com/pheralb/superkey/blob/main/docs/content/${doc.url
-              .split("/")
-              .slice(2)
-              .join("/")}.mdx`}
-            className="text-gray-400"
-          >
-            <BiEditAlt size={18} />
-          </ExternalLink>
+          <div className="flex items-center space-x-5">
+            <Button>Share</Button>
+            <ExternalLink
+              href={`https://github.com/pheralb/superkey/blob/main/docs/content/${doc.url
+                .split("/")
+                .slice(2)
+                .join("/")}.mdx`}
+              className="text-gray-400"
+            >
+              <BiEditAlt size={18} />
+            </ExternalLink>
+          </div>
         </div>
       </CustomContainer>
       <div className="max-w-4xl px-4 py-5 mx-auto md:py-14 md:px-0">
