@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 // Theme & global styles =>
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
+import NProgress from "@/components/nprogress";
 
 // SEO =>
 import { DefaultSeo } from "next-seo";
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <DefaultSeo {...nextSeoConfig} />
+      <NProgress />
       <Warning />
       <Header />
       <Routing key={router.route}>

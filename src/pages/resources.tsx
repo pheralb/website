@@ -44,7 +44,7 @@ const Resources = ({
             </Tag>
           ))}
       </div>
-      <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
+      <div className="mt-8">
         {selectedCategory === "all"
           ? data.map((resource: iResources) => (
               <CardUrl
@@ -53,6 +53,7 @@ const Resources = ({
                 url={resource.url}
                 description={resource.description}
                 image={`${resourcesApi}${resource.img}`}
+                className="mb-3"
               />
             ))
           : data
@@ -66,6 +67,7 @@ const Resources = ({
                   url={resource.url}
                   description={resource.description}
                   image={`${resourcesApi}${resource.img}`}
+                  className="mb-3"
                 />
               ))}
       </div>
