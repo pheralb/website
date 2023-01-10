@@ -1,43 +1,21 @@
-import { ReactNode } from "react";
-
 // Icons =>
 import { BsGithub, BsLinkedin, BsTwitch, BsTwitter } from "react-icons/bs";
 
 export const socialsLinks = [
   {
     url: "https://github.com/pheralb",
-    icon: (
-      <BsGithub
-        size={19}
-        className="transition-all duration-200 dark:text-gray-300 hover:text-stone-400"
-      />
-    ),
+    icon: <BsGithub size={19} name="Github" />,
   },
   {
     url: "https://twitter.com/pheralb_",
-    icon: (
-      <BsTwitter
-        size={19}
-        className="transition-all duration-200 dark:text-gray-300 hover:text-blue-400"
-      />
-    ),
+    icon: <BsTwitter size={19} name="Twitter" />,
   },
   {
     url: "https://www.twitch.tv/pheralb",
-    icon: (
-      <BsTwitch
-        size={19}
-        className="transition-all duration-200 dark:text-gray-300 hover:text-indigo-400"
-      />
-    ),
+    icon: <BsTwitch size={19} name="Twitch" />,
   },
   {
     url: "https://www.linkedin.com/in/pheralb/",
-    icon: (
-      <BsLinkedin
-        size={19}
-        className="transition-all duration-200 dark:text-gray-300 hover:text-blue-600"
-      />
-    ),
+    icon: <BsLinkedin size={19} name="Linkedin" />,
   },
 ];

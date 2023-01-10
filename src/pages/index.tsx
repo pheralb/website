@@ -4,10 +4,12 @@ import { compareDesc } from "date-fns";
 
 import type { iData } from "@/data/dataInterface";
 import { projects } from "@/data/projects";
+import { technologiesData } from "@/data/technologies";
 
 import Project from "@/components/project";
 import Section from "@/components/section";
 import PostCard from "@/components/postCard";
+import Technology from "@/components/technology";
 
 export default function Home({ posts }: { posts: DocContent[] }) {
   return (
@@ -36,6 +38,13 @@ export default function Home({ posts }: { posts: DocContent[] }) {
           {posts.map((post) => (
             <PostCard key={post.url} {...post} />
           ))}
+        </Section>
+        <Section title="Tecnologies">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-6">
+            {technologiesData.map((tech) => (
+              <Technology key={tech.name} {...tech} />
+            ))}
+          </div>
         </Section>
       </CustomContainer>
     </>
