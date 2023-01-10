@@ -39,7 +39,7 @@ export default function Home({ posts }: { posts: DocContent[] }) {
             <PostCard key={post.url} {...post} />
           ))}
         </Section>
-        <Section title="Tecnologies">
+        <Section title="Technologies">
           <div className="grid grid-cols-2 gap-4 md:grid-cols-6">
             {technologiesData.map((tech) => (
               <Technology key={tech.name} {...tech} />
