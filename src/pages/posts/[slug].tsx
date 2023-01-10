@@ -18,16 +18,15 @@ const DocLayout = ({ doc }: { doc: DocContent }) => {
       </Head>
       <CustomContainer>
         <div className="flex items-center justify-between">
-          <CustomLink href="/blog" className="text-gray-300">
+          <CustomLink href="/blog" className="dark:text-gray-300 text-gray-900">
             <div className="flex items-center space-x-2">
               <BiArrowBack size={18} />
               <span>Blog</span>
             </div>
           </CustomLink>
           <div className="flex items-center space-x-5">
-            <Button>Share</Button>
             <ExternalLink
-              href={`https://github.com/pheralb/superkey/blob/main/docs/content/${doc.url
+              href={`https://github.com/pheralb/website/blob/main/posts/${doc.url
                 .split("/")
                 .slice(2)
                 .join("/")}.mdx`}
@@ -39,9 +38,9 @@ const DocLayout = ({ doc }: { doc: DocContent }) => {
         </div>
       </CustomContainer>
       <div className="max-w-4xl px-4 py-5 mx-auto md:py-14 md:px-0">
-        <div className="pb-4 border-b border-neutral-800">
+        <div className="pb-4 border-b dark:border-neutral-800 border-neutral-300">
           <h1 className="mb-2 text-4xl font-bold">{doc.title}</h1>
-          <p className="text-xl text-gray-400">{doc.description}</p>
+          <p className="text-xl dark:text-gray-400 text-gray-700">{doc.description}</p>
         </div>
         <article className="mt-8 prose max-w-none dark:prose-invert prose-h3:mb-0">
           <MDXContent components={{}} />

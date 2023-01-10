@@ -16,6 +16,7 @@ import nextSeoConfig from "next-seo.config";
 import Header from "@/layout/header";
 import Routing from "@/motions/routing";
 import Warning from "@/components/warning";
+import Footer from "@/layout/footer";
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <Routing key={router.route}>
         <Component {...pageProps} />
       </Routing>
+      <Footer />
       <Analytics />
     </ThemeProvider>
   );

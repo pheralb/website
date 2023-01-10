@@ -4,11 +4,7 @@ export const headerLinks = [
     url: "/blog",
   },
   {
-    title: "Projects",
-    url: "/projects",
-  },
-  {
     title: "Resources",
     url: "/resources",
-  },
+  }
 ];
