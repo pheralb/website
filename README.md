@@ -1,71 +1,46 @@
-<div align="center">
-
-![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
-![GitHub license](https://img.shields.io/github/license/pheralb/web)
-[![Required Node.JS >=16.0.0](https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
-
-</div>
-
-## 👋 Welcome
-
-**Personal website** built with:
-
-- [**Next.js + Typescript**](https://nextjs.org/) - The React Framework
-for Production.
-- [**Contentlayer + MDX**](https://www.contentlayer.dev/) - Content made easy for developers.
-- [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [**Framer Motion**](https://www.framer.com/motion/) - Production-Ready Animation Library for React.
-- [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
-- [**React-Icons**](https://react-icons.github.io/react-icons/) with [**React-Symbols**](https://react-symbols.vercel.app/) - SVG React icons.
-
-**Resources API** built with:
-
-- [**Hono + Typescript**](https://hono.dev/) - A small, simple, and ultrafast web framework for Cloudflare Workers.
-- [**Cloudflare Workers**](https://workers.cloudflare.com/) - A platform for enabling serverless functions to run as close as possible to the end user.
-
-## 🚀 Contributing
-
-1. Clone the repository:
-
-```bash
-git@github.com:pheralb/web.git
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-ultra install
-```
-
-3. Run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-ultra dev
-```
-
-📁 Folder structure:
+# Astro Starter Kit: Minimal
 
 ```
-[] posts - MDX files.
-[] public - Static files.
-[] resources - Resources API with Cloudflare Workers.
-[] src - Source code.
+npm create astro@latest -- --template minimal
 ```
 
-Open up [http://localhost:3000](http://localhost:3000), make your magic and create a pull request.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/minimal)
 
-## 📝 License
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- [MIT License](https://github.com/pheralb/web/blob/main/LICENSE).
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

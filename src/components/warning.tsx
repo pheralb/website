@@ -1,4 +1,4 @@
-import CustomContainer from "@/ui/container";
+import CustomContainer from "../ui/container";
 
 const Warning = () => {
   return (

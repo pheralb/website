@@ -1,5 +1,3 @@
-import React from "react";
-
 interface CustomContainerProps {
   children: React.ReactNode;
 }
