@@ -3,7 +3,8 @@
 import "../styles/globals.css";
 
 // Components:
-//import warning from "../components/warning";
+import Warning from "../components/warning.astro";
+import Header from "../components/header.astro";
 
 // Page props:
 interface Props {
@@ -46,7 +47,8 @@ const { pageTitle, description } = Astro.props;
     <title>Pablo Hernández | {pageTitle}</title>
   </head>
   <body class="bg-midnight text-white">
-    <!-- <warning /> -->
+    <Warning />
+    <Header />
     <slot />
   </body>
 </html>

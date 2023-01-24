@@ -1,0 +1,44 @@
+---
+import CustomContainer from "../components/container.astro";
+
+// Data links:
+import { headerLinks } from "../data/headerLinks";
+//import Socials from "./socials.jsx";
+---
+
+<div class="md:sticky top-0 w-full py-3 md:py-7 font-medium bg-midnight z-40">
+  <CustomContainer>
+    <div class="flex flex-col items-center justify-between w-full md:flex-row">
+      <a href="/">
+        <div
+          class="flex items-center space-x-3 text-gray-300 transition-all duration-200 hover:text-gray-100 hover:-translate-y-0.5 mb-4 md:mb-0"
+        >
+          <img
+            width={36}
+            height={36}
+            src="/images/pic.jpg"
+            alt="Logo"
+            class="rounded-full"
+          />
+        </div>
+      </a>
+      <div
+        class="flex items-center justify-center md:space-x-7 flex-col md:flex-row"
+      >
+        <div class="flex flex-row space-x-7">
+          {
+            headerLinks.map((link) => (
+              <a
+                href={link.url}
+                class="text-gray-400 transition-all duration-150 hover:text-gray-100"
+              >
+                {link.url}
+              </a>
+            ))
+          }
+        </div>
+        <!-- <Socials client:only="react"/> -->
+      </div>
+    </div>
+  </CustomContainer>
+</div>
