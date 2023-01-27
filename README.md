@@ -21,7 +21,7 @@
 1. Clone the repository:
 
 ```bash
-git@github.com:pheralb/web.git
+git@github.com:pheralb/website.git
 ```
 
 2. Install dependencies:
