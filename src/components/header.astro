@@ -1,9 +1,8 @@
 ---
 import CustomContainer from "../components/container.astro";
 
-// Data links:
 import { headerLinks } from "../data/headerLinks";
-//import Socials from "./socials.jsx";
+import Socials from "./socials";
 ---
 
 <div class="md:sticky top-0 w-full py-3 md:py-7 font-medium bg-midnight z-40">
@@ -37,7 +36,7 @@ import { headerLinks } from "../data/headerLinks";
             ))
           }
         </div>
-        <!-- <Socials client:only="react"/> -->
+        <Socials client:visible/>
       </div>
     </div>
   </CustomContainer>
