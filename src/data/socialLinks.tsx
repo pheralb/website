@@ -1,7 +1,12 @@
-// Icons =>
 import { GitHub, LinkedIn, Twitter } from "iconoir-react";
+import type { ReactNode } from "react";
 
 const iconSize = 22;
+
+export interface iSocials {
+  url: string;
+  icon: ReactNode;
+}
 
 export const socialsLinks = [
   {
