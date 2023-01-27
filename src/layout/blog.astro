@@ -12,6 +12,7 @@ const { frontmatter } = Astro.props;
       <p class="text-xl text-gray-400">
         {frontmatter.description}
       </p>
+      <p>{frontmatter.status}</p>
     </div>
     <article class="mt-8 prose max-w-none prose-invert prose-h3:mb-0">
       <slot />
