@@ -3,7 +3,6 @@ import { defineConfig } from "astro/config";
 // Astro integrations:
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
-import vercel from "@astrojs/vercel/serverless";
 import mdx from "@astrojs/mdx";
 
 // MDX plugins:
@@ -23,6 +22,5 @@ export default defineConfig({
       remarkPlugins: [remarkGfm],
     }),
   ],
-  output: "server",
-  adapter: vercel(),
+  site: "https://www.pheralb.dev/",
 });
