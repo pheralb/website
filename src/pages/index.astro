@@ -1,9 +1,17 @@
 ---
+import { projects } from "../data/projects";
+
 import Layout from "../layout/index.astro";
+
+import Container from "../components/container.astro";
+import Section from "../components/section.astro";
+import Project from "../components/project";
 ---
 
 <Layout pageTitle="Home" description="Home">
-  <div class="flex flex-col items-center justify-center px-4 py-5 md:py-14 md:px-0">
+  <div
+    class="flex flex-col items-center justify-center px-4 py-5 md:py-14 md:px-0"
+  >
     <div class="flex items-center justify-between w-full max-w-6xl">
       <div>
         <h1 class="mb-4 text-3xl font-bold md:text-5xl">
@@ -15,4 +23,23 @@ import Layout from "../layout/index.astro";
       </div>
     </div>
   </div>
+  <Container>
+    <Section title="Featured Projects">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {
+          projects.map((data) => (
+            <Project
+              title={data.title}
+              description={data.description}
+              image={data.image}
+              url={data.url}
+              type={data.type}
+              gh={data.gh}
+              tags={data.tags}
+            />
+          ))
+        }
+      </div>
+    </Section>
+  </Container>
 </Layout>
