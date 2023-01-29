@@ -6,7 +6,7 @@ const Socials = () => {
       {socialsLinks.map((link : iSocials) => (
         <a
           href={link.url}
-          className="text-gray-400 transition-all duration-150 hover:text-white"
+          
           target="_blank"
         >
           {link.icon}

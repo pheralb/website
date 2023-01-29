@@ -1,8 +1,10 @@
 import type { ReactNode } from "react";
+import clsx from "clsx";
 import { GitHub, LinkedIn, Twitter, Heart } from "iconoir-react";
 
-const iconSize = 22;
+const iconSize = 20;
 const stroke = 2;
+const className = "text-gray-400 transition-all duration-150";
 
 export interface iSocials {
   url: string;
@@ -18,6 +20,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Twitter"
+        className={clsx(className, 'hover:text-blue-400')}
       />
     ),
   },
@@ -29,6 +32,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Github"
+        className={clsx(className, 'hover:text-gray-200')}
       />
     ),
   },
@@ -40,6 +44,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Linkedin"
+        className={clsx(className, 'hover:text-blue-300')}
       />
     ),
   },
@@ -51,6 +56,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Github Sponsors"
+        className={clsx(className, 'hover:text-red-400')}
       />
     ),
   },
