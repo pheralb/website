@@ -5,6 +5,7 @@ import "../styles/globals.css";
 // Components:
 import Warning from "../components/warning.astro";
 import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 
 // Page props:
 interface Props {
@@ -53,5 +54,6 @@ const { pageTitle, description } = Astro.props;
     <Warning />
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>
