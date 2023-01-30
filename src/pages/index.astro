@@ -1,11 +1,26 @@
 ---
+// Static data:
 import { projects } from "../data/projects";
 
+// Layout:
 import Layout from "../layout/index.astro";
 
+// Components:
 import Container from "../components/container.astro";
 import Section from "../components/section.astro";
 import Project from "../components/project";
+
+// Get posts by date:
+import type { Post } from "../types/post";
+import PostCard from "../components/post";
+
+const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
+  .filter((post) => !post.frontmatter.draft)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  );
 ---
 
 <Layout pageTitle="Home" description="Home">
@@ -40,6 +55,18 @@ import Project from "../components/project";
           ))
         }
       </div>
+    </Section>
+    <Section title="Posts">
+      {
+        posts.map((post) => (
+          <PostCard
+            title={post.frontmatter.title}
+            description={post.frontmatter.description}
+            date={post.frontmatter.pubDate}
+            url={post.url}
+          />
+        ))
+      }
     </Section>
   </Container>
 </Layout>
