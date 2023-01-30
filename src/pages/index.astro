@@ -1,6 +1,7 @@
 ---
 // Static data:
 import { projects } from "../data/projects";
+import { technologies } from "../data/technologies";
 
 // Layout:
 import Layout from "../layout/index.astro";
@@ -9,10 +10,11 @@ import Layout from "../layout/index.astro";
 import Container from "../components/container.astro";
 import Section from "../components/section.astro";
 import Project from "../components/project";
+import PostCard from "../components/post.astro";
+import Tech from "../components/tech";
 
 // Get posts by date:
 import type { Post } from "../types/post";
-import PostCard from "../components/post";
 
 const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
   .filter((post) => !post.frontmatter.draft)
@@ -25,7 +27,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
 
 <Layout pageTitle="Home" description="Home">
   <div
-    class="flex flex-col items-center justify-center px-4 py-5 md:py-14 md:px-0"
+    class="flex flex-col items-center justify-center px-4 py-5 md:py-16 md:px-0"
   >
     <div class="flex items-center justify-between w-full max-w-6xl">
       <div>
@@ -67,6 +69,11 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
           />
         ))
       }
+    </Section>
+    <Section title="Technologies">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-6">
+        {technologies.map((tech) => <Tech name={tech.name} icon={tech.icon} />)}
+      </div>
     </Section>
   </Container>
 </Layout>

@@ -11,7 +11,7 @@ export interface iSocials {
   icon: ReactNode;
 }
 
-export const socialsLinks = [
+export const socialsLinks: iSocials[] = [
   {
     url: "https://twitter.com/pheralb_",
     icon: (
@@ -20,7 +20,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Twitter"
-        className={clsx(className, 'hover:text-blue-400')}
+        className={clsx(className, "hover:text-blue-400")}
       />
     ),
   },
@@ -32,7 +32,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Github"
-        className={clsx(className, 'hover:text-gray-200')}
+        className={clsx(className, "hover:text-gray-200")}
       />
     ),
   },
@@ -44,7 +44,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Linkedin"
-        className={clsx(className, 'hover:text-blue-300')}
+        className={clsx(className, "hover:text-blue-300")}
       />
     ),
   },
@@ -56,7 +56,7 @@ export const socialsLinks = [
         height={iconSize}
         strokeWidth={stroke}
         name="Github Sponsors"
-        className={clsx(className, 'hover:text-red-400')}
+        className={clsx(className, "hover:text-red-400")}
       />
     ),
   },
