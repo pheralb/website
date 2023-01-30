@@ -17,6 +17,7 @@
     "@astrojs/react": "2.0.1",
     "@astrojs/tailwind": "3.0.0",
     "@astrojs/vercel": "3.0.0",
+    "@react-symbols/icons": "1.1.7",
     "astro": "2.0.2",
     "clsx": "1.2.1",
     "iconoir-react": "6.2.0",
