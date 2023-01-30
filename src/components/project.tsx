@@ -1,12 +1,4 @@
-import {
-  BoxIso,
-  GitHub,
-  Npm,
-  NpmSquare,
-  OpenNewWindow,
-  Svg3DSelectPoint,
-  Svg3DSelectSolid,
-} from "iconoir-react";
+import { GitHub, Npm, OpenNewWindow, Puzzle } from "iconoir-react";
 
 export interface ProjectProps {
   title: string;
@@ -28,7 +20,7 @@ const Project = (props: ProjectProps) => {
               <h1 className="text-xl font-medium hover:text-gray-300">
                 {props.title}
               </h1>
-              <OpenNewWindow width={13} height={13} />
+              <OpenNewWindow width={13} height={13} className="text-gray-400" />
             </div>
           </a>
         ) : (
@@ -47,9 +39,19 @@ const Project = (props: ProjectProps) => {
       <div className="flex items-center mt-3 space-x-2">
         <div className="hidden md:block">
           {props.type === "Library" ? (
-            <Npm width={23} height={23} name="Library" className="text-red-400" />
+            <Npm
+              width={23}
+              height={23}
+              name="Library"
+              className="text-red-400"
+            />
           ) : (
-            <BoxIso width={20} height={20} name="App" className="text-blue-400" />
+            <Puzzle
+              width={20}
+              height={20}
+              name="App"
+              className="text-blue-400"
+            />
           )}
         </div>
         {props.tags?.map((tag: string) => (
