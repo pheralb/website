@@ -14,7 +14,7 @@
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [**React 18 Integration**](https://docs.astro.build/es/guides/integrations-guide/react/) - Use React components.
 - [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
-- [**Iconoir**](https://iconoir.com/) with [**React-Symbols**](https://react-symbols.vercel.app/) - Your new default library.
+- [**Iconoir v6**](https://iconoir.com/) with [**React-Symbols**](https://react-symbols.vercel.app/) - Beautifully crafted SVG icons.
 
 ## 🚀 Contributing
 
