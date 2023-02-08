@@ -44,11 +44,14 @@ const { pageTitle, description } = Astro.props;
       content={description || "Building amazing things"}
     />
     <meta name="twitter:image" content="/images/og_image.png" />
-    <meta name="twitter:image:alt" content="Personal Website" />
+    <meta name="twitter:image:alt" content="My personal website" />
     <meta name="twitter:creator" content="@pheralb_" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="/images/pic.jpg" />
+
     <!-- Title -->
-    <title>Pablo | {pageTitle}</title>
+    <title>{pageTitle} - Pablo Hdez</title>
   </head>
   <body class="bg-midnight text-white">
     <Warning />

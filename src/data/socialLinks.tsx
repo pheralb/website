@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import clsx from "clsx";
-import { GitHub, LinkedIn, Twitter, Heart } from "iconoir-react";
+import { GitHub, Twitter, Heart } from "iconoir-react";
 
 const iconSize = 20;
 const stroke = 2;
@@ -33,18 +33,6 @@ export const socialsLinks: iSocials[] = [
         strokeWidth={stroke}
         name="Github"
         className={clsx(className, "hover:text-gray-200")}
-      />
-    ),
-  },
-  {
-    url: "https://www.linkedin.com/in/pheralb/",
-    icon: (
-      <LinkedIn
-        width={iconSize}
-        height={iconSize}
-        strokeWidth={stroke}
-        name="Linkedin"
-        className={clsx(className, "hover:text-blue-300")}
       />
     ),
   },
