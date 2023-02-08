@@ -19,15 +19,19 @@
     "@astrojs/vercel": "3.0.0",
     "@react-symbols/icons": "1.1.7",
     "astro": "2.0.2",
+    "boring-avatars": "1.7.0",
+    "canvas-confetti": "1.6.0",
     "clsx": "1.2.1",
     "iconoir-react": "6.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rehype-prism-plus": "1.5.0",
-    "remark-gfm": "3.0.1"
+    "remark-gfm": "3.0.1",
+    "wc-toast": "1.2.9"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.9",
+    "@types/canvas-confetti": "1.6.0",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "tailwindcss": "3.2.4"
