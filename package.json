@@ -19,7 +19,6 @@
     "@astrojs/vercel": "3.0.0",
     "@react-symbols/icons": "1.1.7",
     "astro": "2.0.2",
-    "boring-avatars": "1.7.0",
     "canvas-confetti": "1.6.0",
     "clsx": "1.2.1",
     "iconoir-react": "6.2.0",
