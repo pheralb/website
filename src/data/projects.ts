@@ -7,6 +7,17 @@ export const projects = [
     image: "/images/screenshots/svgl.png",
     type: "App",
     tags: ["Next.js", "React", "Typescript", "Tailwind CSS"],
+    team: ["pheralb"],
+  },
+  {
+    title: "lyra AI",
+    description: "✌ An open-source app using Next.js 13 & Cohere API.",
+    gh: "https://github.com/miduteam/lyra-ai",
+    url: "https://lyrai.fly.dev/",
+    image: "/images/screenshots/svgl.png",
+    type: "App",
+    tags: ["Next.js", "Tailwind CSS", "Typescript", "Co:here"],
+    team: ["pheralb", "aforina", "ikurotime", "srdrabx", "tmchein"],
   },
   {
     title: "superkey",
@@ -16,6 +27,17 @@ export const projects = [
     image: "/images/screenshots/svgl.png",
     type: "Library",
     tags: ["React", "Next.js", "Typescript", "Tailwind CSS"],
+    team: ["pheralb"],
+  },
+  {
+    title: "SuperUI",
+    description: "🚀 A Tailwindcss component library.",
+    gh: "https://github.com/pheralb/react-symbols",
+    url: "https://react-symbols.vercel.app/",
+    image: "/images/screenshots/svgl.png",
+    type: "Library",
+    tags: ["Next.js", "Typescript", "Turborepo", "Tailwind CSS"],
+    team: ["pheralb", "srdrabx", "ikurotime", "tmchein"],
   },
   {
     title: "svgl",
@@ -25,6 +47,7 @@ export const projects = [
     image: "/images/screenshots/svgl.png",
     type: "App",
     tags: ["React", "Next.js", "Typescript", "Chakra UI"],
+    team: ["pheralb"],
   },
   {
     title: "weathr",
@@ -34,6 +57,7 @@ export const projects = [
     image: "/images/screenshots/svgl.png",
     type: "App",
     tags: ["React", "Next.js", "Typescript", "Chakra UI"],
+    team: ["pheralb"],
   },
   {
     title: "React-Symbols",
@@ -43,14 +67,16 @@ export const projects = [
     image: "/images/screenshots/svgl.png",
     type: "Library",
     tags: ["React", "Remix", "Typescript", "Tailwind CSS"],
+    team: ["pheralb"],
   },
   {
     title: "movies-daw",
-    description: "🎓 Final DAW MERN project.",
+    description:
+      "🎓 Final DAW MERN project. Using Mongodb, Express, React & Nodejs.",
     gh: "https://github.com/pheralb/movies-daw",
-    url: "https://github.com/pheralb/movies-daw",
     image: "/images/screenshots/svgl.png",
-    type: "App",
-    tags: ["React", "Node.js", "Javascript", "Chakra UI"],
+    type: "Library",
+    tags: ["React", "MongoDB", "Express", "Javascript"],
+    team: ["pheralb", "josedec16", "jonatan0867"],
   },
 ];

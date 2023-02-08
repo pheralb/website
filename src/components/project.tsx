@@ -1,3 +1,4 @@
+import Avatar from "boring-avatars";
 import { GitHub, Npm, OpenNewWindow, Puzzle } from "iconoir-react";
 
 export interface ProjectProps {
@@ -8,6 +9,7 @@ export interface ProjectProps {
   gh?: string;
   type: string;
   tags?: string[];
+  team?: string[];
 }
 
 const Project = (props: ProjectProps) => {
@@ -15,7 +17,7 @@ const Project = (props: ProjectProps) => {
     <div className="flex flex-col p-4 border rounded-md border-neutral-800">
       <div className="flex items-center justify-between mb-2">
         {props.url ? (
-          <a href={props.url}>
+          <a href={props.url} target="_blank">
             <div className="flex items-center space-x-2">
               <h1 className="text-xl font-medium hover:text-gray-300">
                 {props.title}
@@ -26,7 +28,7 @@ const Project = (props: ProjectProps) => {
         ) : (
           <h1 className="text-xl font-medium">{props.title}</h1>
         )}
-        <a href={props.gh ? props.gh : ""}>
+        <a href={props.gh ? props.gh : ""} target="_blank">
           <GitHub
             width={20}
             height={20}
@@ -36,32 +38,46 @@ const Project = (props: ProjectProps) => {
         </a>
       </div>
       <p className="dark:text-gray-300">{props.description}</p>
-      <div className="flex items-center mt-3 space-x-2">
-        <div className="hidden md:block">
-          {props.type === "Library" ? (
-            <Npm
-              width={23}
-              height={23}
-              name="Library"
-              className="text-red-400"
-            />
-          ) : (
-            <Puzzle
-              width={20}
-              height={20}
-              name="App"
-              className="text-blue-400"
-            />
-          )}
-        </div>
-        {props.tags?.map((tag: string) => (
-          <div
-            className="px-2 py-1 text-xs font-mono truncate border rounded-md bg-neutral-900 border-neutral-800 cursor-pointer"
-            title={tag}
-          >
-            {tag}
+      <div className="flex items-center justify-between mt-3">
+        <div className="flex items-center space-x-2">
+          <div className="hidden md:block">
+            {props.type === "Library" ? (
+              <Npm
+                width={23}
+                height={23}
+                name="Library"
+                className="text-red-400"
+              />
+            ) : (
+              <Puzzle
+                width={20}
+                height={20}
+                name="App"
+                className="text-blue-400"
+              />
+            )}
           </div>
-        ))}
+          {props.tags?.map((tag: string) => (
+            <div
+              className="px-2 py-1 text-xs font-mono truncate border rounded-md bg-neutral-900 border-neutral-800"
+              title={tag}
+            >
+              {tag}
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center space-x-1">
+          {props.team?.map((member: string) => (
+            <div title={member} key={member} className="hover:-translate-y-0.5 duration-200">
+              <Avatar
+                size={20}
+                name={member}
+                variant="beam"
+                colors={["#F56565", "#ED8936", "#ECC94B", "#48BB78", "#4299E1"]}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
