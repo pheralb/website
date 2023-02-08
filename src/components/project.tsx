@@ -1,4 +1,4 @@
-import Avatar from "boring-avatars";
+import Avatar from "./avatar";
 import { GitHub, Npm, OpenNewWindow, Puzzle } from "iconoir-react";
 
 export interface ProjectProps {
@@ -68,14 +68,19 @@ const Project = (props: ProjectProps) => {
         </div>
         <div className="flex items-center space-x-1">
           {props.team?.map((member: string) => (
-            <div title={member} key={member} className="hover:-translate-y-0.5 duration-200">
+            <a
+              key={member}
+              href={`https://github.com/${member}`}
+              target="_blank"
+              title={member}
+              className="hover:-translate-y-0.5 duration-200"
+            >
               <Avatar
                 size={20}
                 name={member}
-                variant="beam"
                 colors={["#F56565", "#ED8936", "#ECC94B", "#48BB78", "#4299E1"]}
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
