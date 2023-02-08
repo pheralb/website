@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     title: "SuperUI",
-    description: "🚀 A Tailwindcss component library.",
+    description: "🚀 A Tailwind CSS component library.",
     gh: "https://github.com/pheralb/react-symbols",
     url: "https://react-symbols.vercel.app/",
     image: "/images/screenshots/svgl.png",

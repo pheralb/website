@@ -22,13 +22,18 @@ const Project = (props: ProjectProps) => {
               <h1 className="text-xl font-medium hover:text-gray-300">
                 {props.title}
               </h1>
-              <OpenNewWindow width={13} height={13} className="text-gray-400" />
+              <OpenNewWindow
+                width={13}
+                height={13}
+                name="Deploy"
+                className="text-gray-400"
+              />
             </div>
           </a>
         ) : (
           <h1 className="text-xl font-medium">{props.title}</h1>
         )}
-        <a href={props.gh ? props.gh : ""} target="_blank">
+        <a href={props.gh ? props.gh : ""} target="_blank" title="Repository">
           <GitHub
             width={20}
             height={20}
