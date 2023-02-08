@@ -48,12 +48,13 @@ const { pageTitle, description } = Astro.props;
     <meta name="twitter:creator" content="@pheralb_" />
 
     <!-- Title -->
-    <title>Pablo Hernández | {pageTitle}</title>
+    <title>Pablo | {pageTitle}</title>
   </head>
   <body class="bg-midnight text-white">
     <Warning />
     <Header />
     <slot />
     <Footer />
+    <wc-toast></wc-toast>
   </body>
 </html>

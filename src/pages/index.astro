@@ -34,7 +34,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
         <h1 class="mb-4 text-3xl font-bold md:text-5xl">
           Hi, I&apos;m Pablo ✌️
         </h1>
-        <p class="text-xl dark:text-gray-300">
+        <p class="text-xl text-gray-300">
           I&apos;m a frontend developer from Canary Islands.
         </p>
       </div>
@@ -53,6 +53,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
               type={data.type}
               gh={data.gh}
               tags={data.tags}
+              team={data.team}
             />
           ))
         }
@@ -72,7 +73,11 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
     </Section>
     <Section title="Technologies">
       <div class="grid grid-cols-2 gap-4 md:grid-cols-6">
-        {technologies.map((tech) => <Tech name={tech.name} icon={tech.icon} />)}
+        {
+          technologies.map((tech) => (
+            <Tech name={tech.name} icon={tech.icon} color={tech.color} />
+          ))
+        }
       </div>
     </Section>
   </Container>
