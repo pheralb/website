@@ -1,0 +1,44 @@
+---
+layout: ../../layout/blog.astro
+title: How to build a fast API with Hono & Cloudflare Workers
+date: 2022-02-13
+author: pheralb
+description: Learn how to create a simple app with Next.js 13 (src), Prisma, Next-Auth.js, Tailwind CSS, tRPC and Planetscale.
+status: writing
+---
+
+## Introduction
+
+Hono is a new framework for building fast APIs with Cloudflare Workers. It's a framework that allows you to build APIs with a simple and intuitive syntax, and it's built on top of Cloudflare Workers. It's a great way to build APIs that are fast, secure, and scalable.
+
+## Install the Workers CLI
+
+The first thing you need to do is install the Workers CLI. This is a command line tool that allows you to create and manage your Workers projects. You can install it with your favorite package manager:
+
+```bash {2,3,4}
+# with npm:
+npm install -g wrangler
+
+# with yarn:
+yarn global add wrangler
+
+# with pnpm:
+pnpm add -g wrangler
+
+# with ultra:
+ultra add wrangler
+```
+
+and then run this command to log in to your Cloudflare account:
+
+```bash
+wrangler login
+```
+
+## Create a new project
+
+Now that you have the Workers CLI installed, you can create a new project. You can do this by running the following command:
+
+```bash
+wrangler init hono-app
+```
