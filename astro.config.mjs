@@ -6,8 +6,8 @@ import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 
 // MDX plugins:
-import rehypePrism from "rehype-prism-plus";
 import remarkGfm from "remark-gfm";
+import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
 
 export default defineConfig({
   integrations: [
@@ -18,8 +18,12 @@ export default defineConfig({
       },
     }),
     mdx({
-      rehypePlugins: [rehypePrism],
-      remarkPlugins: [remarkGfm],
+      rehypePlugins: [],
+      remarkPlugins: [remarkGfm, remarkReadingTime],
+      extendDefaultPlugins: true,
+      shikiConfig: {
+        theme: "vitesse-dark",
+      },
     }),
   ],
   site: "https://www.pheralb.dev/",
