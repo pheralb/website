@@ -3,7 +3,6 @@
 import "../styles/globals.css";
 
 // Components:
-import Warning from "../components/warning.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 
@@ -54,7 +53,6 @@ const { pageTitle, description } = Astro.props;
     <title>{pageTitle} - Pablo Hdez</title>
   </head>
   <body class="bg-midnight text-white">
-    <Warning />
     <Header />
     <slot />
     <Footer />
