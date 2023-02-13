@@ -17,3 +17,8 @@
   font-weight: 400 900;
   font-display: swap;
 }
+
+.astro-code {
+  border: 2px solid #171717;
+  border-radius: 0.5rem;
+}
