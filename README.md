@@ -1,5 +1,9 @@
 <div align="center">
 
+<a href="https://www.pheralb.dev/" target="_blank">
+<img src="public/images/github_img.png" alt="Screenshot" />
+</a>
+
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
 ![GitHub license](https://img.shields.io/github/license/pheralb/web)
 [![Required Node.JS >=16.0.0](https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
