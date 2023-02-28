@@ -13,9 +13,5 @@ export const socialsLinks = [
   {
     url: "https://www.twitch.tv/pheralb",
     icon: <BsTwitch size={19} name="Twitch" />,
-  },
-  {
-    url: "https://www.linkedin.com/in/pheralb/",
-    icon: <BsLinkedin size={19} name="Linkedin" />,
-  },
+  }
 ];
