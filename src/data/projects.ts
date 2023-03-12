@@ -10,6 +10,15 @@ export const projects = [
     team: ["pheralb"],
   },
   {
+    title: "project-hackathon",
+    description: "🌻 An open-source hackathon management.",
+    gh: "https://github.com/pheralb/project-hackathon",
+    url: "https://phck.vercel.app/",
+    type: "App",
+    tags: ["Next.js", "tRPC", "Typescript", "Prisma"],
+    team: ["pheralb", "tmchein"],
+  },
+  {
     title: "lyra AI",
     description: "✌ An open-source app using Next.js 13 & Cohere API.",
     gh: "https://github.com/miduteam/lyra-ai",
@@ -68,15 +77,5 @@ export const projects = [
     type: "Library",
     tags: ["React", "Remix", "Typescript", "Tailwind CSS"],
     team: ["pheralb"],
-  },
-  {
-    title: "movies-daw",
-    description:
-      "🎓 Final DAW MERN project. Using Mongodb, Express, React & Nodejs.",
-    gh: "https://github.com/pheralb/movies-daw",
-    image: "/images/screenshots/svgl.png",
-    type: "Library",
-    tags: ["React", "MongoDB", "Express", "Javascript"],
-    team: ["pheralb", "josedec16", "jonatan0867"],
   },
 ];

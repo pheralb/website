@@ -45,23 +45,6 @@ const Project = (props: ProjectProps) => {
       <p className="dark:text-gray-300">{props.description}</p>
       <div className="flex items-center justify-between mt-3">
         <div className="flex items-center space-x-2">
-          <div className="hidden md:block">
-            {props.type === "Library" ? (
-              <Npm
-                width={23}
-                height={23}
-                name="Library"
-                className="text-red-400"
-              />
-            ) : (
-              <Puzzle
-                width={20}
-                height={20}
-                name="App"
-                className="text-blue-400"
-              />
-            )}
-          </div>
           {props.tags?.map((tag: string) => (
             <div
               className="px-2 py-1 text-xs font-mono truncate border rounded-md bg-neutral-900 border-neutral-800"
@@ -71,7 +54,7 @@ const Project = (props: ProjectProps) => {
             </div>
           ))}
         </div>
-        <div className="flex items-center space-x-1">
+        <div className="hidden md:flex items-center space-x-1">
           {props.team?.map((member: string) => (
             <a
               key={member}
