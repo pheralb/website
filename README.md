@@ -1,10 +1,26 @@
 <div align="center">
 
 <a href="https://www.pheralb.dev/" target="_blank">
-<img src="public/images/github_img.png" alt="Screenshot" />
+<img src="public/images/github_readme.png" alt="Screenshot" />
 </a>
 
+</p>
 
+<div align="center">
+    <a href="#-welcome">
+        Stack
+    </a>
+    <span>&nbsp;❖&nbsp;</span>
+    <a href="#-contributing">
+        Contributing
+    </a>
+    <span>&nbsp;❖&nbsp;</span>
+    <a href="https://phck.vercel.app" target="_blank">
+        Deploy ↗︎
+    </a>
+</div>
+
+</p>
 
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
 ![GitHub license](https://img.shields.io/github/license/pheralb/web)
