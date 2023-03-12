@@ -1,0 +1,84 @@
+---
+// Static data:
+import { projects } from "../data/projects";
+import { technologies } from "../data/technologies";
+
+// Layout:
+import Layout from "../layout/index.astro";
+
+// Components:
+import Container from "../components/container.astro";
+import Section from "../components/section.astro";
+import Project from "../components/project";
+import PostCard from "../components/post.astro";
+import Tech from "../components/tech";
+
+// Get posts by date:
+import type { Post } from "../types/post";
+
+const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
+  .filter((post) => !post.frontmatter.draft)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  );
+---
+
+<Layout pageTitle="Home" description="Home">
+  <div
+    class="flex flex-col items-center justify-center px-4 py-5 md:py-24 md:px-0"
+  >
+    <div class="flex items-center justify-between w-full max-w-6xl">
+      <div>
+        <h1 class="mb-4 text-3xl font-bold md:text-5xl">
+          Hi, I&apos;m Pablo ✌️
+        </h1>
+        <p class="text-md text-gray-300">
+          Web developer from Canary Islands interested in design, databases & performance. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <Container>
+    <Section title="Featured Projects">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {
+          projects.map((data) => (
+            <Project
+              title={data.title}
+              description={data.description}
+              image={data.image}
+              url={data.url}
+              type={data.type}
+              gh={data.gh}
+              tags={data.tags}
+              team={data.team}
+            />
+          ))
+        }
+      </div>
+    </Section>
+    <Section title="Posts">
+      {
+        posts.map((post) => (
+          <PostCard
+            title={post.frontmatter.title}
+            description={post.frontmatter.description}
+            date={post.frontmatter.pubDate}
+            url={post.url}
+          />
+        ))
+      }
+    </Section>
+    <Section title="Technologies">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-6">
+        {
+          technologies.map((tech) => (
+            <Tech name={tech.name} icon={tech.icon} color={tech.color} />
+          ))
+        }
+      </div>
+    </Section>
+  </Container>
+</Layout>

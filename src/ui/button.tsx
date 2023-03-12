@@ -1,21 +1,26 @@
-import React from "react";
+import clsx from "clsx";
+import type { ReactNode } from "react";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  type?: "button" | "submit" | "reset";
-  onClick?: () => void;
+interface iButton {
+  children: ReactNode;
+  icon?: ReactNode;
+  onClick: () => void;
   className?: string;
 }
 
-const Button = (props: ButtonProps) => {
+const Button = (props: iButton) => {
   return (
     <button
-      className={`px-4 py-2 text-sm font-medium text-white transition-colors duration-200 bg-neutral-900 rounded-md hover:bg-neutral-900 dark:hover:bg-neutral-800 border dark:border-neutral-800 ${props.className}`}
-      type={props.type}
       onClick={props.onClick}
-      {...props}
+      className={clsx(
+        "px-4 py-2 rounded-md text-white border border-neutral-800 bg-neutral-900 hover:border-neutral-700 duration-100 transition-colors text-sm",
+        props.className
+      )}
     >
-      {props.children}
+      <div className="flex items-center">
+        <div className="mr-2">{props.icon}</div>
+        {props.children}
+      </div>
     </button>
   );
 };

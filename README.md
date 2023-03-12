@@ -1,5 +1,9 @@
 <div align="center">
 
+<a href="https://www.pheralb.dev/" target="_blank">
+<img src="public/images/github_img.png" alt="Screenshot" />
+</a>
+
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
 ![GitHub license](https://img.shields.io/github/license/pheralb/web)
 [![Required Node.JS >=16.0.0](https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
@@ -10,25 +14,17 @@
 
 **Personal website** built with:
 
-- [**Next.js + Typescript**](https://nextjs.org/) - The React Framework
-for Production.
-- [**Contentlayer + MDX**](https://www.contentlayer.dev/) - Content made easy for developers.
+- [**Astro v2 + Typescript**](https://astro.build/) - Build faster websites.
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [**Framer Motion**](https://www.framer.com/motion/) - Production-Ready Animation Library for React.
-- [**Headless UI**](https://headlessui.dev/) - Completely unstyled, fully accessible UI components.
-- [**React-Icons**](https://react-icons.github.io/react-icons/) with [**React-Symbols**](https://react-symbols.vercel.app/) - SVG React icons.
-
-**Resources API** built with:
-
-- [**Hono + Typescript**](https://hono.dev/) - A small, simple, and ultrafast web framework for Cloudflare Workers.
-- [**Cloudflare Workers**](https://workers.cloudflare.com/) - A platform for enabling serverless functions to run as close as possible to the end user.
+- [**React 18**](https://docs.astro.build/es/guides/integrations-guide/react/) - Use React components.
+- [**Iconoir v6**](https://iconoir.com/) with [**React-Symbols**](https://react-symbols.vercel.app/) - Beautifully crafted SVG icons.
 
 ## 🚀 Contributing
 
 1. Clone the repository:
 
 ```bash
-git@github.com:pheralb/web.git
+git@github.com:pheralb/website.git
 ```
 
 2. Install dependencies:
@@ -58,9 +54,9 @@ ultra dev
 📁 Folder structure:
 
 ```
-[] posts - MDX files.
+[] .github - Funding file.
+[] .vscode - Extensions, config & launch options for vscode.
 [] public - Static files.
-[] resources - Resources API with Cloudflare Workers.
 [] src - Source code.
 ```
 
