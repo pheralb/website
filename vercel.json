@@ -22,6 +22,10 @@
     {
       "source": "/gh",
       "destination": "https://github.com/pheralb"
+    },
+    {
+      "source": "/git",
+      "destination": "https://github.com/pheralb/website"
     }
   ]
 }
