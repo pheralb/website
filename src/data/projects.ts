@@ -13,6 +13,7 @@ export const projects = [
     title: "project-hackathon",
     description: "🌻 An open-source hackathon management.",
     gh: "https://github.com/pheralb/project-hackathon",
+    image: "/images/screenshots/svgl.png",
     url: "https://phck.vercel.app/",
     type: "App",
     tags: ["Next.js", "tRPC", "Typescript", "Prisma"],
