@@ -18,7 +18,7 @@ const Button = (props: iButton) => {
       )}
     >
       <div className="flex items-center">
-        <div className="mr-2">{props.icon}</div>
+        <div className="mr-3">{props.icon}</div>
         {props.children}
       </div>
     </button>

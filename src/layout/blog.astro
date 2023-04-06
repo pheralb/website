@@ -17,11 +17,8 @@ const { frontmatter } = Astro.props;
             >Blog</a
           >
         </div>
-        <div class="flex items-center space-x-4">
-          <p>{frontmatter.minutesRead}</p>
-          <div>
-            <CopyUrl url={`pheralb.dev${frontmatter.url}`} client:load />
-          </div>
+        <div>
+          <CopyUrl url={`pheralb.dev${frontmatter.url}`} client:load />
         </div>
       </div>
     </CustomContainer>
@@ -35,7 +32,8 @@ const { frontmatter } = Astro.props;
       </p>
     </div>
     <article
-      class="mt-8 prose max-w-none prose-invert prose-h3:mb-0 prose-code:bg-transparent">
+      class="mt-8 prose max-w-none prose-invert prose-h3:mb-0 prose-code:bg-transparent"
+    >
       <slot />
     </article>
   </div>

@@ -1,5 +1,4 @@
-import Avatar from "./avatar";
-import { GitHub, Npm, OpenNewWindow, Puzzle } from "iconoir-react";
+import { ArrowTr, GitHub } from "iconoir-react";
 
 export interface ProjectProps {
   title: string;
@@ -19,12 +18,12 @@ const Project = (props: ProjectProps) => {
         {props.url ? (
           <a href={props.url} target="_blank">
             <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-medium hover:text-gray-300">
+              <h1 className="text-xl font-medium hover:text-gray-400 duration-150">
                 {props.title}
               </h1>
-              <OpenNewWindow
-                width={13}
-                height={13}
+              <ArrowTr
+                width={14}
+                height={14}
                 name="Deploy"
                 className="text-gray-400"
               />
@@ -42,7 +41,7 @@ const Project = (props: ProjectProps) => {
           />
         </a>
       </div>
-      <p className="dark:text-gray-300">{props.description}</p>
+      <p className="text-gray-400">{props.description}</p>
       <div className="flex items-center justify-between mt-3">
         <div className="flex items-center space-x-2">
           {props.tags?.map((tag: string) => (
@@ -52,23 +51,6 @@ const Project = (props: ProjectProps) => {
             >
               {tag}
             </div>
-          ))}
-        </div>
-        <div className="hidden md:flex items-center space-x-1">
-          {props.team?.map((member: string) => (
-            <a
-              key={member}
-              href={`https://github.com/${member}`}
-              target="_blank"
-              title={member}
-              className="hover:-translate-y-0.5 duration-200"
-            >
-              <Avatar
-                size={20}
-                name={member}
-                colors={["#F56565", "#ED8936", "#ECC94B", "#48BB78", "#4299E1"]}
-              />
-            </a>
           ))}
         </div>
       </div>
