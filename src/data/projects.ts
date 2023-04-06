@@ -51,12 +51,12 @@ export const projects = [
   },
   {
     title: "svgl",
-    description: "🎨 A beautiful library with SVG logos.",
+    description: "🧩 A beautiful library with SVG logos.",
     gh: "https://github.com/pheralb/svgl",
     url: "https://svgl.vercel.app",
     image: "/images/screenshots/svgl.png",
     type: "App",
-    tags: ["React", "Next.js", "Typescript", "Chakra UI"],
+    tags: ["Sveltekit", "Typescript", "Tailwind CSS"],
     team: ["pheralb"],
   },
   {
