@@ -8,12 +8,12 @@ const { frontmatter } = Astro.props;
 
 <Layout pageTitle={frontmatter.title} description={frontmatter.description}>
   <div
-    class="pb-3 w-full text-neutral-300 hover:text-white duration-100 transition-all border-b border-neutral-800"
+    class="w-full border-b border-neutral-800 pb-3 text-neutral-300 transition-all duration-100 hover:text-white"
   >
     <CustomContainer>
       <div class="flex flex-row items-center justify-between">
         <div class="flex flex-row items-center">
-          <a href="/blog" class="flex flex-row items-center font-bold text-xl"
+          <a href="/blog" class="flex flex-row items-center text-xl font-bold"
             >Blog</a
           >
         </div>
@@ -24,7 +24,7 @@ const { frontmatter } = Astro.props;
     </CustomContainer>
   </div>
 
-  <div class="max-w-4xl px-4 py-6 mx-auto md:py-14 md:px-0">
+  <div class="mx-auto max-w-4xl px-4 py-6 md:px-0 md:py-14">
     <div class="pb-8">
       <h1 class="mb-2 text-4xl font-bold">{frontmatter.title}</h1>
       <p class="text-xl text-gray-400">
@@ -32,7 +32,7 @@ const { frontmatter } = Astro.props;
       </p>
     </div>
     <article
-      class="mt-8 prose max-w-none prose-invert prose-h3:mb-0 prose-code:bg-transparent"
+      class="prose prose-invert mt-8 max-w-none prose-h3:mb-0 prose-code:bg-transparent"
     >
       <slot />
     </article>

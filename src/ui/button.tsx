@@ -13,7 +13,7 @@ const Button = (props: iButton) => {
     <button
       onClick={props.onClick}
       className={clsx(
-        "px-4 py-2 rounded-md text-white border border-neutral-800 bg-neutral-900 hover:border-neutral-700 duration-100 transition-colors text-sm",
+        "rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm text-white transition-colors duration-100 hover:border-neutral-700",
         props.className
       )}
     >

@@ -31,7 +31,7 @@
 
 body {
   --sb-track-color: #121212;
-  --sb-thumb-color: #4B4B4B;
+  --sb-thumb-color: #4b4b4b;
   --sb-size: 10px;
 
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);

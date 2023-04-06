@@ -5,12 +5,14 @@ import { headerLinks } from "../data/headerLinks";
 import Socials from "./socials";
 ---
 
-<div class="md:sticky top-0 w-full py-3 md:py-7 font-medium bg-midnight/90 z-40">
+<div
+  class="top-0 z-40 w-full bg-midnight/90 py-3 font-medium md:sticky md:py-7"
+>
   <CustomContainer>
-    <div class="flex flex-col items-center justify-between w-full md:flex-row">
+    <div class="flex w-full flex-col items-center justify-between md:flex-row">
       <a href="/">
         <div
-          class="flex items-center space-x-3 text-gray-300 transition-all duration-200 hover:text-gray-100 hover:-translate-y-0.5 mb-4 md:mb-0"
+          class="mb-4 flex items-center space-x-3 text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:text-gray-100 md:mb-0"
         >
           <img
             width={36}
@@ -22,7 +24,7 @@ import Socials from "./socials";
         </div>
       </a>
       <div
-        class="flex items-center justify-center md:space-x-7 flex-col md:flex-row"
+        class="flex flex-col items-center justify-center md:flex-row md:space-x-7"
       >
         <div class="flex flex-row space-x-7">
           {

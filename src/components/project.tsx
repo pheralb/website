@@ -13,12 +13,12 @@ export interface ProjectProps {
 
 const Project = (props: ProjectProps) => {
   return (
-    <div className="flex flex-col p-4 border rounded-md border-neutral-800">
-      <div className="flex items-center justify-between mb-2">
+    <div className="flex flex-col rounded-md border border-neutral-800 p-4">
+      <div className="mb-2 flex items-center justify-between">
         {props.url ? (
           <a href={props.url} target="_blank">
             <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-medium hover:text-gray-400 duration-150">
+              <h1 className="text-xl font-medium duration-150 hover:text-gray-400">
                 {props.title}
               </h1>
               <ArrowTr
@@ -42,11 +42,11 @@ const Project = (props: ProjectProps) => {
         </a>
       </div>
       <p className="text-gray-400">{props.description}</p>
-      <div className="flex items-center justify-between mt-3">
+      <div className="mt-3 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           {props.tags?.map((tag: string) => (
             <div
-              className="px-2 py-1 text-xs font-mono truncate border rounded-md bg-neutral-900 border-neutral-800"
+              className="truncate rounded-md border border-neutral-800 bg-neutral-900 px-2 py-1 font-mono text-xs"
               title={tag}
             >
               {tag}
