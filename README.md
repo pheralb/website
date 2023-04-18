@@ -15,7 +15,7 @@
         Getting Started
     </a>
     <span>&nbsp;⁘&nbsp;</span>
-    <a href="#-welcome">
+    <a href="#-stack">
         Stack
     </a>
     <span>&nbsp;⁘&nbsp;</span>
@@ -99,17 +99,20 @@ Open up [http://localhost:3000](http://localhost:3000) to view the website 🚀.
 
 ## 🌱 Shortcuts
 
-- pheralb.dev[**/tw**](pheralb.dev/tw) - Twitter.
-- pheralb.dev[**/tv**](pheralb.dev/tv) - Twitch.
-- pheralb.dev[**/ln**](pheralb.dev/ln) - LinkedIn.
-- pheralb.dev[**/gh**](pheralb.dev/gh) - Github profile.
-- pheralb.dev[**/git**](pheralb.dev/git) - Github website repository.
+- pheralb.dev[**/tw**](https://pheralb.dev/tw) - Twitter.
+- pheralb.dev[**/tv**](https://pheralb.dev/tv) - Twitch.
+- pheralb.dev[**/ln**](https://pheralb.dev/ln) - LinkedIn.
+- pheralb.dev[**/gh**](https://pheralb.dev/gh) - Github profile.
+- pheralb.dev[**/git**](https://pheralb.dev/git) - Github website repository.
 
 ## ☁ Deploy
 
-- [**pheralb.dev**](pheralb.dev).
+I am using [**Vercel**](https://vercel.com/) for deployment:
+
+- [**pheralb.dev**](https://pheralb.dev).
 - [**pheralb.vercel.app**](pheralb.vercel.app).
 
 ## 📝 License
 
 - [Apache-2.0 license](https://github.com/pheralb/web/blob/main/LICENSE).
+https://www.common.wtf/
