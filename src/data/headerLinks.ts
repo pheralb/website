@@ -1,9 +1,6 @@
-export interface iHeader {
-  title: string;
-  url: string;
-}
+import type { iHeader } from "@/types/header";
 
-export const headerLinks = [
+export const headerLinks: iHeader[] = [
   {
     title: "Blog",
     url: "/blog",

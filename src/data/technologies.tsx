@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { iTechnology } from "@/types/technologies";
 
 import {
   Reactts,
@@ -17,12 +17,6 @@ import {
   Sass,
   Docker,
 } from "@react-symbols/icons";
-
-export interface iTechnology {
-  name: string;
-  icon: ReactNode;
-  color?: string;
-}
 
 const width = 50;
 const height = 50;
@@ -160,6 +154,5 @@ export const technologies: iTechnology[] = [
         className={hover}
       />
     ),
-    color: "#60A5FA",
   },
 ];

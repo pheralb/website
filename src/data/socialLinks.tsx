@@ -1,15 +1,10 @@
-import type { ReactNode } from "react";
+import type { iSocials } from "@/types/socials";
 import clsx from "clsx";
 import { GitHub, Twitter, Heart, LinkedIn } from "iconoir-react";
 
 const iconSize = 20;
 const stroke = 2;
 const className = "text-gray-400 transition-all duration-150";
-
-export interface iSocials {
-  url: string;
-  icon: ReactNode;
-}
 
 export const socialsLinks: iSocials[] = [
   {
