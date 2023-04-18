@@ -1,4 +1,9 @@
 ---
+// Types:
+import type { Post } from "@/types/post";
+import type { iProject } from "@/types/project";
+import type { iTechnology } from "@/types/technologies";
+
 // Static data:
 import { projects } from "@/data/projects";
 import { technologies } from "@/data/technologies";
@@ -14,8 +19,6 @@ import PostCard from "@/components/post.astro";
 import Tech from "@/components/tech";
 
 // Get posts by date:
-import type { Post } from "@/types/post";
-
 const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
   .filter((post) => !post.frontmatter.draft)
   .sort(
@@ -45,11 +48,10 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
     <Section title="Featured Projects">
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {
-          projects.map((data) => (
+          projects.map((data: iProject) => (
             <Project
               title={data.title}
               description={data.description}
-              image={data.image}
               url={data.url}
               type={data.type}
               gh={data.gh}
@@ -62,7 +64,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
     </Section>
     <Section title="Posts">
       {
-        posts.map((post) => (
+        posts.map((post: Post) => (
           <PostCard
             title={post.frontmatter.title}
             description={post.frontmatter.description}
@@ -75,7 +77,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
     <Section title="Technologies">
       <div class="grid grid-cols-2 gap-4 md:grid-cols-6">
         {
-          technologies.map((tech) => (
+          technologies.map((tech: iTechnology) => (
             <Tech name={tech.name} icon={tech.icon} color={tech.color} />
           ))
         }
