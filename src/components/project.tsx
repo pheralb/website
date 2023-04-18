@@ -6,11 +6,13 @@ const Project = (props: iProject) => {
     <div className="flex flex-col rounded-md border border-neutral-800 p-4">
       <div className="mb-2 flex items-center justify-between">
         {props.url ? (
-          <a href={props.url} target="_blank">
+          <a
+            href={props.url}
+            target="_blank"
+            className="text-xl font-medium duration-150 hover:text-gray-400"
+          >
             <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-medium duration-150 hover:text-gray-400">
-                {props.title}
-              </h1>
+              <h1>{props.title}</h1>
               <ArrowTr
                 width={14}
                 height={14}
