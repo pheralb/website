@@ -110,9 +110,8 @@ Open up [http://localhost:3000](http://localhost:3000) to view the website 🚀.
 I am using [**Vercel**](https://vercel.com/) for deployment:
 
 - [**pheralb.dev**](https://pheralb.dev).
-- [**pheralb.vercel.app**](pheralb.vercel.app).
+- [**pheralb.vercel.app**](https://pheralb.vercel.app).
 
 ## 📝 License
 
 - [Apache-2.0 license](https://github.com/pheralb/web/blob/main/LICENSE).
-https://www.common.wtf/
