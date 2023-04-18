@@ -7,37 +7,54 @@
 </p>
 
 <div align="center">
+    <a href="https://pheralb.dev" target="_blank">
+        Website
+    </a>
+    <span>&nbsp;⁘&nbsp;</span>
+    <a href="#-getting-started">
+        Getting Started
+    </a>
+    <span>&nbsp;⁘&nbsp;</span>
     <a href="#-welcome">
         Stack
     </a>
-    <span>&nbsp;❖&nbsp;</span>
-    <a href="#-contributing">
-        Contributing
+    <span>&nbsp;⁘&nbsp;</span>
+    <a href="#-license">
+        License
     </a>
-    <span>&nbsp;❖&nbsp;</span>
-    <a href="https://phck.vercel.app" target="_blank">
-        Deploy ↗︎
+    <span>&nbsp;⁘&nbsp;</span>
+    <a href="https://twitter.com/pheralb_" target="_blank">
+        Twitter
     </a>
 </div>
 
 </p>
 
-![GitHub stars](https://img.shields.io/github/stars/pheralb/web)
-![GitHub license](https://img.shields.io/github/license/pheralb/web)
+![GitHub stars](https://img.shields.io/github/stars/pheralb/website)
+![GitHub issues](https://img.shields.io/github/issues/pheralb/project-hackathon)
+![GitHub forks](https://img.shields.io/github/forks/pheralb/website)
+![GitHub license](https://img.shields.io/github/license/pheralb/website)
 [![Required Node.JS >=16.0.0](https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
 
 </div>
 
-## 👋 Welcome
+## ⚙ Stack
 
-**Personal website** built with:
-
-- [**Astro v2 + Typescript**](https://astro.build/) - Build faster websites.
+- [**Astro** + Typescript](https://astro.build/) - Build the web
+you want.
+- [**React 18**](https://react.dev/) - The library for web and native user interfaces.
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [**React 18**](https://docs.astro.build/es/guides/integrations-guide/react/) - Use React components.
-- [**Iconoir v6**](https://iconoir.com/) with [**React-Symbols**](https://react-symbols.vercel.app/) - Beautifully crafted SVG icons.
+- [**Prettier** + prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes.
+- [**Iconoir**](https://iconoir.com/) with [**React-Symbols**](https://react-symbols.vercel.app/) - Beautifully crafted SVG icons & logos.
 
-## 🚀 Contributing
+## 🚀 Getting Started
+
+We recommend using the following extensions for Visual Studio Code:
+
+- [**Astro for VSCode**](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode).
+- [**Tailwind CSS IntelliSense**](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss).
+- [**PostCSS Language Support**](https://marketplace.visualstudio.com/items?itemName=csstools.postcss).
+- [**Prettier - Code formatter**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 
 1. Clone the repository:
 
@@ -73,13 +90,26 @@ ultra dev
 
 ```
 [] .github - Funding file.
-[] .vscode - Extensions, config & launch options for vscode.
+[] .vscode - Extensions, config & launch options for VSCode.
 [] public - Static files.
-[] src - Source code.
+[] src - Astro source code.
 ```
 
-Open up [http://localhost:3000](http://localhost:3000), make your magic and create a pull request.
+Open up [http://localhost:3000](http://localhost:3000) to view the website 🚀.
+
+## 🌱 Shortcuts
+
+- pheralb.dev[**/tw**](pheralb.dev/tw) - Twitter.
+- pheralb.dev[**/tv**](pheralb.dev/tv) - Twitch.
+- pheralb.dev[**/ln**](pheralb.dev/ln) - LinkedIn.
+- pheralb.dev[**/gh**](pheralb.dev/gh) - Github profile.
+- pheralb.dev[**/git**](pheralb.dev/git) - Github website repository.
+
+## ☁ Deploy
+
+- [**pheralb.dev**](pheralb.dev).
+- [**pheralb.vercel.app**](pheralb.vercel.app).
 
 ## 📝 License
 
-- [MIT License](https://github.com/pheralb/web/blob/main/LICENSE).
+- [Apache-2.0 license](https://github.com/pheralb/web/blob/main/LICENSE).
