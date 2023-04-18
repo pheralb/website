@@ -20,6 +20,10 @@
       "destination": "https://www.twitch.tv/pheralb"
     },
     {
+      "source": "/ln",
+      "destination": "https://www.linkedin.com/in/pheralb/"
+    },
+    {
       "source": "/gh",
       "destination": "https://github.com/pheralb"
     },
