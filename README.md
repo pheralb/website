@@ -41,7 +41,7 @@
 ## ⚙ Stack
 
 - [**Astro** + Typescript](https://astro.build/) - Build the web
-you want.
+  you want.
 - [**React 18**](https://react.dev/) - The library for web and native user interfaces.
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [**Prettier** + prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes.
@@ -86,6 +86,8 @@ pnpm dev
 ultra dev
 ```
 
+Open up [http://localhost:3000](http://localhost:3000) to view the website 🚀.
+
 📁 Folder structure:
 
 ```
@@ -95,7 +97,16 @@ ultra dev
 [] src - Astro source code.
 ```
 
-Open up [http://localhost:3000](http://localhost:3000) to view the website 🚀.
+⚙ Commands:
+
+| Command        | Action                                                  |
+| :------------- | :------------------------------------------------------ |
+| `dev`          | Starts local dev server at `localhost:3000`.            |
+| `build`        | Build site to `./dist/`.                                |
+| `preview`      | Preview your build locally, before deploying.           |
+| `astro ...`    | Run Astro CLI commands like `astro add`, `astro check`. |
+| `astro --help` | Get help using the Astro CLI.                           |
+| `format`       | Format code with Prettier.                              |
 
 ## 🌱 Shortcuts
 
