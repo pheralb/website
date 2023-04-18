@@ -1,17 +1,7 @@
+import type { iProject } from "@/types/project";
 import { ArrowTr, GitHub } from "iconoir-react";
 
-export interface ProjectProps {
-  title: string;
-  description: string;
-  image: string;
-  url?: string;
-  gh?: string;
-  type: string;
-  tags?: string[];
-  team?: string[];
-}
-
-const Project = (props: ProjectProps) => {
+const Project = (props: iProject) => {
   return (
     <div className="flex flex-col rounded-md border border-neutral-800 p-4">
       <div className="mb-2 flex items-center justify-between">
