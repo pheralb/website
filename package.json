@@ -17,6 +17,8 @@
   "dependencies": {
     "@astrojs/mdx": "0.19.0",
     "@astrojs/react": "2.1.1",
+    "@astrojs/rss": "2.3.2",
+    "@astrojs/sitemap": "1.2.2",
     "@astrojs/tailwind": "3.1.1",
     "@astrojs/vercel": "3.2.4",
     "@react-symbols/icons": "1.1.7",
