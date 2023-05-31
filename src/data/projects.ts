@@ -1,6 +1,15 @@
 import type { iProject } from "@/types/project";
 
-export const projects : iProject[] = [
+export const projects: iProject[] = [
+  {
+    title: "frame",
+    description: "🎨 Generate images with beautiful gradients.",
+    type: "App",
+    url: "https://myframe.vercel.app/",
+    gh: "https://github.com/pheralb/frame",
+    tags: ["Next.js", "Typescript", "Tailwind CSS", "Zustand"],
+    team: ["pheralb"],
+  },
   {
     title: "slug",
     description: "🌱 A URL shortener built with T3 Stack.",
@@ -8,6 +17,15 @@ export const projects : iProject[] = [
     url: "https://slug.vercel.app/",
     gh: "https://github.com/pheralb/slug",
     tags: ["Next.js", "Typescript", "Tailwind CSS", "tRPC"],
+    team: ["pheralb"],
+  },
+  {
+    title: "react-symbols",
+    description: "✨ Symbols by Miguel Solorio, for React.",
+    type: "Library",
+    url: "https://react-symbols.vercel.app/",
+    gh: "https://github.com/pheralb/react-symbols",
+    tags: ["Turborepo", "Remix", "Typescript", "Tailwind CSS"],
     team: ["pheralb"],
   },
   {
@@ -49,7 +67,7 @@ export const projects : iProject[] = [
   {
     title: "SuperUI",
     description: "🚀 A Tailwind CSS component library.",
-    type: "s",
+    type: "Library",
     gh: "https://github.com/pheralb/react-symbols",
     url: "https://react-symbols.vercel.app/",
     tags: ["Turborepo", "Next.js", "Typescript", "Tailwind CSS"],
@@ -65,12 +83,12 @@ export const projects : iProject[] = [
     team: ["pheralb"],
   },
   {
-    title: "React-Symbols",
-    description: "✨ Symbols VSCode Theme by Miguel Solorio, for React.",
-    type: "Library",
-    gh: "https://github.com/pheralb/react-symbols",
-    url: "https://react-symbols.vercel.app/",
-    tags: ["Turborepo", "Remix", "Typescript", "Tailwind CSS"],
+    title: "gifit",
+    description: "🕹️ Discover amazing gifs, using Giphy.",
+    type: "App",
+    gh: "https://github.com/pheralb/gifit",
+    url: "https://gifit.pages.dev",
+    tags: ["React", "Typescript", "Chakra UI", "Giphy"],
     team: ["pheralb"],
   },
 ];
