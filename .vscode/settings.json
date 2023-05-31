@@ -1,6 +1,4 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "files.associations": {
     "*.mdx": "markdown"
   }

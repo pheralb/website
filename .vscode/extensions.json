@@ -3,6 +3,5 @@
     "astro-build.astro-vscode",
     "bradlc.vscode-tailwindcss",
     "csstools.postcss"
-  ],
-  "unwantedRecommendations": []
+  ]
 }
