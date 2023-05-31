@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         sans: ["Satoshi", ...fontFamily.sans],
         mono: ["Cascadia", ...fontFamily.mono],
+        heading: ["CalSans", ...fontFamily.sans],
       },
       colors: {
         light: "#FFFEFC",
