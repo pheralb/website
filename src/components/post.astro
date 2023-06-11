@@ -1,4 +1,5 @@
 ---
+import FormattedDate from "./formattedDate.astro";
 export interface PostProps {
   title: string;
   description: string;
@@ -11,12 +12,12 @@ const { title, description, date, url } = Astro.props;
 
 <a href={url ? url : ""}>
   <div
-    class="flex flex-col rounded-md border border-neutral-800 p-4 transition-all duration-150 hover:bg-neutral-900"
+    class="flex flex-col rounded-md border border-neutral-800 p-4 transition-all duration-150 hover:bg-neutral-800/40"
   >
     <div class="flex items-center justify-between">
       <h1 class="text-xl font-medium">{title}</h1>
     </div>
-    <p class="text-gray-400">{description}</p>
-    <p>{date}</p>
+    <p class="mb-2 text-gray-400">{description}</p>
+    <FormattedDate date={date} />
   </div>
 </a>
