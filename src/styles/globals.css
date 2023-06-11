@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* Custom fonts: */
+/* ------------- */
 
 @font-face {
   font-family: "Satoshi";
@@ -21,24 +22,29 @@
 }
 
 /* Custom Code Block: */
+/* ----------------- */
 
 .astro-code {
-  border: 2px solid #171717;
+  border: 2px solid #1c1c1c;
   border-radius: 0.5rem;
+  background-color: #161616 !important;
+  font-family: "Cascadia", monospace;
+  font-size: 15px;
 }
 
 /* Custom Scrollbar: */
+/* ----------------- */
 
 body {
   --sb-track-color: #121212;
   --sb-thumb-color: #4b4b4b;
   --sb-size: 10px;
-
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
 body::-webkit-scrollbar {
   width: var(--sb-size);
+  border: 1px solid #262626;
 }
 
 body::-webkit-scrollbar-track {
