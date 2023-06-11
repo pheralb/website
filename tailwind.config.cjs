@@ -9,13 +9,12 @@ module.exports = {
       fontFamily: {
         sans: ["Satoshi", ...fontFamily.sans],
         mono: ["Cascadia", ...fontFamily.mono],
-        heading: ["CalSans", ...fontFamily.sans],
       },
       colors: {
         light: "#FFFEFC",
-        midnight: "#121212",
+        midnight: "#161616",
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
 };
