@@ -8,7 +8,6 @@ import sitemap from "@astrojs/sitemap";
 
 // MDX plugins:
 import remarkGfm from "remark-gfm";
-import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
 
 export default defineConfig({
   site: "https://www.pheralb.dev/",
@@ -21,11 +20,12 @@ export default defineConfig({
     }),
     mdx({
       rehypePlugins: [],
-      remarkPlugins: [remarkGfm, remarkReadingTime],
-      extendDefaultPlugins: true,
+      remarkPlugins: [remarkGfm],
       shikiConfig: {
-        theme: "vitesse-dark",
+        theme: "one-dark-pro",
+        wrap: true,
       },
+      gfm: true,
     }),
     sitemap(),
   ],
