@@ -1,0 +1,153 @@
+---
+title: "How to add light/dark mode in Next.js 13"
+description: "Learn how to add light/dark mode in your Next.js 13 app with next-themes. Including /app & /pages directory + Tailwind CSS."
+pubDate: "May 31 2023"
+heroImage: "/placeholder-hero.jpg"
+---
+
+## Introduction
+
+[Next-Themes](https://github.com/pacocoursey/next-themes) is a Next.js plugin created by [@pacocoursey](https://paco.me/) that allows you to add light/dark mode to your Next.js app. It's super easy to use and works great with HTML/CSS and Tailwind CSS.
+
+## Install Next-Themes
+
+- Install next-themes with your favorite package manager:
+
+```bash
+# with npm:
+npm install next-themes
+
+# with yarn:
+yarn add next-themes
+
+# with pnpm:
+pnpm add next-themes
+```
+
+## Add ThemeProvider
+
+- 📂 **/app directory**:
+
+1. Create a new file called `themeProvider.js` or `themeProvider.tsx` inside of your `/src/app` directory and add the following code:
+
+```jsx
+// JavaScript
+// /src/components/themeProvider.js
+
+"use client";
+
+import { ThemeProvider } from "next-themes";
+
+export function ThemeProvider({ children }) {
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      {children}
+    </ThemeProvider>
+  );
+}
+```
+
+```tsx
+// Typescript
+// /src/components/themeProvider.tsx
+
+"use client";
+
+import * as React from "react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import type { ThemeProviderProps } from "next-themes/dist/types";
+
+export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+}
+```
+
+2. Import the `themeProvider` component into your `layout.js` or `layout.tsx` file and wrap it around your body page:
+
+```jsx
+// JavaScript
+// /src/app/layout.js
+
+import { ThemeProvider } from "@/themeProvider";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+```tsx
+// Typescript
+// /src/app/layout.tsx
+
+import { ThemeProvider } from "@/themeProvider";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+- 📂 **/pages directory**:
+
+Add the `themeProvider` provider from next-themes to your `_app.js` or `_app.tsx` file:
+
+```jsx
+// JavaScript or Typescript
+// /src/pages/_app.js or /src/pages/_app.tsx
+
+import { ThemeProvider } from "next-themes";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+}
+
+export default MyApp;
+```
+
+## With Tailwind CSS
+
+1. Add `darkMode: "class"` to your `tailwind.config.js` file:
+
+```js
+// /tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  ...
+};
+```
+
+2. To apply the light/dark mode:
+
+```html
+<button className="bg-neutral-200 dark:bg-blue-700">
+  ✨
+</button>
+```
+
+## Switching themes
+
+1. Add the `useTheme` hook from next-themes:
+
+
+
+```jsx
