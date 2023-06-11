@@ -53,7 +53,7 @@ export const projects: iProject[] = [
     gh: "https://github.com/miduteam/lyra-ai",
     url: "https://lyrai.fly.dev/",
     tags: ["Turborepo", "Next.js", "Typescript", "Co:here"],
-    team: ["pheralb", "aforina", "ikurotime", "srdrabx", "tmchein"],
+    team: ["pheralb", "aforina", "ikurotime", "nachoaldamav", "tmchein"],
   },
   {
     title: "superkey",
@@ -68,10 +68,10 @@ export const projects: iProject[] = [
     title: "SuperUI",
     description: "🚀 A Tailwind CSS component library.",
     type: "Library",
-    gh: "https://github.com/pheralb/react-symbols",
-    url: "https://react-symbols.vercel.app/",
+    gh: "https://github.com/pheralb/superui",
+    url: "https://superui.vercel.app/",
     tags: ["Turborepo", "Next.js", "Typescript", "Tailwind CSS"],
-    team: ["pheralb", "srdrabx", "ikurotime", "tmchein"],
+    team: ["pheralb", "nachoaldamav", "ikurotime", "tmchein"],
   },
   {
     title: "weathr",

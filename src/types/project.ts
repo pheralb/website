@@ -5,7 +5,7 @@ export interface iProject {
   url?: string;
   gh?: string;
   tags?: string[];
-  team?: string[];
+  team: string[];
 }
 
 export type projectType =
